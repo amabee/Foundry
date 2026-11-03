@@ -39,6 +39,7 @@ The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages
 2. Commit the source, manifest and generated payload together.
 3. Run `pnpm registry:generate HEAD`. The registry references that complete commit SHA, never a mutable branch for executable code.
 4. Run `pnpm test`, commit the registry update and open a pull request. Review host grants and catalogue status along with code changes.
+5. Merge with a merge commit (or fast-forward), preserving the pinned source commit. Do not squash, rebase or force-rewrite published source history; CI checks that registry revisions remain ancestors of the current checkout.
 
 `catalogue.json` records publication policy. StreamFlix stays blocked until its implementation and availability are verified. Vidlink remains explicitly experimental. Adding a source to the repository does not automatically make it installable from the registry.
 

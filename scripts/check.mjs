@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import { isIP } from "node:net";
@@ -9,6 +10,7 @@ const registry = JSON.parse(await readFile(join(root, "extensions/registry.json"
 assert.ok(Array.isArray(registry) && registry.length > 0);
 const revision = new URL(registry[0].manifestURI).pathname.split("/")[3];
 assert.match(revision, /^[0-9a-f]{40}$/);
+assert.doesNotThrow(() => execFileSync("git", ["merge-base", "--is-ancestor", revision, "HEAD"], { cwd: root, stdio: "pipe" }), "Pinned source commits must remain reachable. Merge without squashing or rebasing.");
 assert.deepEqual(registry, registryEntries(revision), "Regenerate the registry from a committed source revision.");
 const folders = (await readdir(join(root, "extensions"), { withFileTypes: true })).filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort();
 assert.deepEqual(folders, Object.keys(catalogue).sort());
