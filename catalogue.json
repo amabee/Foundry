@@ -1,9 +1,33 @@
 {
-  "moviebox": { "status": "available", "previouslyVerified": true },
-  "kisskh": { "status": "available", "previouslyVerified": true },
-  "internet-archive": { "status": "available", "previouslyVerified": true },
-  "vixsrc": { "status": "available" },
-  "desiflix": { "status": "available" },
-  "vidlink": { "status": "experimental" },
-  "streamflix": { "status": "blocked" }
+  "moviebox": {
+    "status": "available",
+    "previouslyVerified": true
+  },
+  "kisskh": {
+    "status": "available",
+    "previouslyVerified": true
+  },
+  "internet-archive": {
+    "status": "available",
+    "previouslyVerified": true
+  },
+  "vixsrc": {
+    "status": "available"
+  },
+  "desiflix": {
+    "status": "available"
+  },
+  "vidlink": {
+    "status": "experimental"
+  },
+  "streamflix": {
+    "status": "blocked"
+  },
+  "hentai2read": {
+    "status": "experimental",
+    "reason": "Live metadata returned HTTP 403 during verification."
+  },
+  "hentaiera": {
+    "status": "available"
+  }
 }

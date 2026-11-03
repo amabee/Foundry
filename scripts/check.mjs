@@ -22,12 +22,13 @@ for (const folder of folders) {
   assert.ok(!ids.has(manifest.id)); ids.add(manifest.id);
   assert.match(manifest.version, /^\d+\.\d+\.\d+$/);
   assert.match(manifest.sdkVersion, /^1\.\d+\.\d+$/);
-  assert.equal(manifest.role, "stream-source");
+  assert.ok(["stream-source","manga-source"].includes(manifest.role));
   assert.equal(manifest.main, "index.js");
   assert.ok(manifest.hosts.length > 0 && manifest.hosts.length <= 256);
   for (const host of manifest.hosts) assert.ok(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(host) && host.includes(".") && !isIP(host), `Invalid host grant: ${host}`);
   for (const permission of manifest.permissions) assert.ok(["network", "network:session"].includes(permission));
   for (const kind of manifest.kinds) assert.ok(["movie", "tv"].includes(kind));
+  if(manifest.role==="manga-source")assert.equal(manifest.kinds.length,0);
   if (catalogue[folder].status !== "blocked") {
     for (const file of ["manifest.json", "index.js"])
       assert.deepEqual(await readFile(join(root, "extensions", folder, file)), pinnedFile(revision, folder, file), `Commit ${folder}/${file} before publishing its registry entry.`);
@@ -38,7 +39,7 @@ for (const folder of folders) {
     extensionId: manifest.id, log() {},
     async fetch() { networkCalls++; throw Error("Activation must not access the network."); },
   } });
-  for (const method of ["search", "getEpisodes", "getStreams"]) assert.equal(typeof provider[method], "function", `${manifest.id} lacks ${method}`);
+  for (const method of (manifest.role==="manga-source"?["search","searchPage","getChapters","getPages"]:["search", "getEpisodes", "getStreams"])) assert.equal(typeof provider[method], "function", `${manifest.id} lacks ${method}`);
   if (manifest.discovery) assert.equal(typeof provider.browse, "function", `${manifest.id} lacks browse`);
   if (manifest.catalogueSource === "tmdb") assert.equal(typeof provider.matchCatalogue, "function");
 }
