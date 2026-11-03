@@ -20,15 +20,15 @@ export function registryEntries(revision) {
     const experimental = policy.status === "experimental";
     return {
       id: manifest.id, name: manifest.name, version: manifest.version,
-      author: manifest.author, description: (experimental ? "Experimental: upstream playback checks have failed. " : "") + manifest.description,
-      type: "custom-source", language: "javascript", lang: "multi", icon: manifest.icon ?? "",
+      author: manifest.author, description: (experimental ? `Experimental: ${policy.reason ?? "upstream playback checks have failed."} ` : "") + manifest.description,
+      type: manifest.role === "manga-source" ? "manga-provider" : "custom-source", language: "javascript", lang: "multi", icon: manifest.icon ?? "",
       manifestURI: `${base}/manifest.json`, payloadURI: `${base}/${manifest.main}`,
       website: `https://github.com/${repository}/tree/${revision}/extensions/${folder}`,
       tags: ["vestra", "foundry", "native", ...(experimental ? ["experimental"] : [])],
       workingTag: policy.previouslyVerified === true,
       brokenTag: experimental,
       lastWorkingVersion: policy.previouslyVerified ? manifest.version : null,
-      kinds: manifest.kinds,
+      kinds: manifest.role === "manga-source" ? ["manga"] : manifest.kinds,
     };
   });
 }

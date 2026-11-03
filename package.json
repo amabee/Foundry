@@ -11,7 +11,7 @@
     "build": "node scripts/build.mjs",
     "registry:generate": "node scripts/generate-registry.mjs",
     "check": "node scripts/check.mjs",
-    "test": "pnpm run build && pnpm run check"
+    "test": "pnpm run build && node --test test/*.test.mjs && pnpm run check"
   },
   "devDependencies": { "esbuild": "0.28.1" }
 }
