@@ -1,0 +1,10 @@
+node_modules/
+.compat/
+.tools/
+*.log
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem

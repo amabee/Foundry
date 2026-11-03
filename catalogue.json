@@ -1,0 +1,9 @@
+{
+  "moviebox": { "status": "available", "previouslyVerified": true },
+  "kisskh": { "status": "available", "previouslyVerified": true },
+  "internet-archive": { "status": "available", "previouslyVerified": true },
+  "vixsrc": { "status": "available" },
+  "desiflix": { "status": "available" },
+  "vidlink": { "status": "experimental" },
+  "streamflix": { "status": "blocked" }
+}

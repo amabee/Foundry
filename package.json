@@ -1,0 +1,17 @@
+{
+  "name": "vestra-foundry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vestra Foundry — native extension sources and registry for Vestra.",
+  "license": "MIT",
+  "packageManager": "pnpm@11.9.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "registry:generate": "node scripts/generate-registry.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "pnpm run build && pnpm run check"
+  },
+  "devDependencies": { "esbuild": "0.28.1" }
+}
