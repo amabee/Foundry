@@ -37,7 +37,7 @@ for (const folder of folders) {
     async fetch() { networkCalls++; throw Error("Activation must not access the network."); },
   } });
   for (const method of ["search", "getEpisodes", "getStreams"]) assert.equal(typeof provider[method], "function", `${manifest.id} lacks ${method}`);
-  if (manifest.discovery) assert.equal(typeof provider.discover, "function");
+  if (manifest.discovery) assert.equal(typeof provider.browse, "function", `${manifest.id} lacks browse`);
   if (manifest.catalogueSource === "tmdb") assert.equal(typeof provider.matchCatalogue, "function");
 }
 assert.equal(networkCalls, 0);
