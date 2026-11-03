@@ -9,9 +9,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://h5.inmoviebox.com/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/moviebox/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/moviebox/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/moviebox",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/moviebox/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/moviebox/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/moviebox",
     "tags": [
       "vestra",
       "foundry",
@@ -35,9 +35,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://kisskh.co/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/kisskh/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/kisskh/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/kisskh",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/kisskh/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/kisskh/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/kisskh",
     "tags": [
       "vestra",
       "foundry",
@@ -61,9 +61,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://archive.org/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/internet-archive/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/internet-archive/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/internet-archive",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/internet-archive/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/internet-archive/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/internet-archive",
     "tags": [
       "vestra",
       "foundry",
@@ -86,9 +86,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://vixsrc.to/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vixsrc/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vixsrc/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vixsrc",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vixsrc/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vixsrc/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vixsrc",
     "tags": [
       "vestra",
       "foundry",
@@ -112,9 +112,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/desiflix/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/desiflix/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/desiflix",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/desiflix/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/desiflix/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/desiflix",
     "tags": [
       "vestra",
       "foundry",
@@ -138,9 +138,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://vidlink.pro/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vidlink/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vidlink/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/a4bffec70ea436eddc1258933a6a84141f482ceb/extensions/vidlink",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vidlink/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vidlink/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/vidlink",
     "tags": [
       "vestra",
       "foundry",
@@ -153,6 +153,57 @@
     "kinds": [
       "movie",
       "tv"
+    ]
+  },
+  {
+    "id": "vestra-hentai2read",
+    "name": "Hentai2Read (18+)",
+    "version": "1.0.0",
+    "author": "Vestra contributors",
+    "description": "Experimental: Live metadata returned HTTP 403 during verification. Native manga search, chapters and reader for Hentai2Read, with paged search.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "multi",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentai2read/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentai2read/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentai2read",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native",
+      "experimental"
+    ],
+    "workingTag": false,
+    "brokenTag": true,
+    "lastWorkingVersion": null,
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
+    "id": "vestra-hentaiera",
+    "name": "HentaiEra (18+)",
+    "version": "1.0.0",
+    "author": "Vestra contributors",
+    "description": "Native manga search, chapters and reader for HentaiEra, with paged search.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "multi",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentaiera/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentaiera/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/aabc9762a81ed29f8815d2c370aac8b107b6ca28/extensions/hentaiera",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": false,
+    "brokenTag": false,
+    "lastWorkingVersion": null,
+    "kinds": [
+      "manga"
     ]
   }
 ]
