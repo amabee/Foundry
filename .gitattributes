@@ -1,2 +1,6 @@
 * text=auto eol=lf
 pnpm-lock.yaml -diff linguist-generated=true
+
+extensions/**/manifest.json text eol=lf
+extensions/**/index.js text eol=lf
+extensions/registry.json text eol=lf
