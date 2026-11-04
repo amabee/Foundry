@@ -141,7 +141,8 @@
       "name": "RavenScans",
       "language": "en",
       "upstreamPath": "src/manga/ravenscans/provider.js",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Live metadata is blocked by an automated-access challenge."
     },
     {
       "folder": "taiyo",

@@ -21,6 +21,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | KuraManga | Native en manga; sandbox search, chapters, pages and sample image verified |
 | LelManga (French) | Native fr manga; sandbox search, chapters, pages and sample image verified |
 | MangaFreak | Native en manga; sandbox search, chapters, pages and sample image verified |
+| RavenScans | Experimental native manga; Live metadata is blocked by an automated-access challenge. |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
