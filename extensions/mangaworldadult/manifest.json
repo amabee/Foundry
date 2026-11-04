@@ -1,7 +1,7 @@
 {
   "id": "vestra-mangaworldadult",
   "name": "MangaWorldAdult (Italian, 18+)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sdkVersion": "1.6.0",
   "main": "index.js",
   "role": "manga-source",

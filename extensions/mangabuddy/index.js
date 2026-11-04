@@ -11,7 +11,7 @@ function url(raw, origin) {
   if (value.startsWith("//")) value = "https:" + value;
   else if (value.startsWith("/")) value = origin + value;
   if (value.length > 4096 || /[\s\\\u0000-\u001f\u007f]/.test(value)) return null;
-  const match = /^https:\/\/([a-z0-9]+(?:[.-][a-z0-9]+)*)(\/[^#]*)?$/i.exec(value);
+  const match = /^https:\/\/([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*)(\/[^#]*)?$/i.exec(value);
   if (!match) return null;
   let decoded;
   try {

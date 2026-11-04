@@ -69,7 +69,8 @@
       "name": "AniTube",
       "language": "pt",
       "upstreamPath": "src/anime/anitube/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "aniworld",

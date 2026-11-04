@@ -41,7 +41,7 @@ function url(raw, origin) {
   if (value.startsWith("//")) value = "https:" + value;
   else if (value.startsWith("/")) value = origin + value;
   if (value.length > 4096 || /[\s\\\u0000-\u001f\u007f]/.test(value)) return null;
-  const match = /^https:\/\/([a-z0-9]+(?:[.-][a-z0-9]+)*)(\/[^#]*)?$/i.exec(value);
+  const match = /^https:\/\/([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*)(\/[^#]*)?$/i.exec(value);
   if (!match) return null;
   let decoded;
   try {
@@ -185,6 +185,62 @@ function htmlAnime(config, { host }) {
   };
 }
 
+// lib/packed-data.js
+function unpackData(html) {
+  const quoted = `("(?:[^"\\\\]|\\\\.)*"|'(?:[^'\\\\]|\\\\.)*')`;
+  const re = new RegExp("\\}\\s*\\(\\s*" + quoted + "\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*" + quoted + `\\.split\\(["']\\|["']\\)`, "g");
+  const results = [];
+  for (const m of html.matchAll(re)) {
+    const radix = Number(m[2]), count = Number(m[3]);
+    if (radix < 2 || radix > 62 || count > 1e4) throw Error("Packed source data exceeds its limit.");
+    const payload = literal(m[1]), table = literal(m[4]).split("|"), alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let size = 0;
+    const decoded = payload.replace(/\b[0-9a-zA-Z]+\b/g, (word) => {
+      let n = 0;
+      for (const c of word) {
+        const digit = alphabet.indexOf(c);
+        if (digit < 0 || digit >= radix) return word;
+        n = n * radix + digit;
+        if (n >= count) return word;
+      }
+      const value = table[n] || word;
+      size += value.length;
+      if (size > 1024 * 1024) throw Error("Unpacked source data exceeds its limit.");
+      return value;
+    });
+    results.push(decoded);
+    if (results.length > 10) throw Error("Too many packed source blocks.");
+  }
+  return results.join("\n");
+}
+
+// lib/rsc-data.js
+function jsonArray(data, key) {
+  const match = new RegExp('"' + key + '"\\s*:\\s*\\[').exec(data);
+  if (!match) throw Error("Reader page data is missing.");
+  const start = match.index + match[0].length - 1;
+  let depth = 0, quoted = false, escape = false;
+  for (let i = start; i < data.length; i++) {
+    const c = data[i];
+    if (quoted) {
+      if (escape) escape = false;
+      else if (c === "\\") escape = true;
+      else if (c === '"') quoted = false;
+      continue;
+    }
+    if (c === '"') quoted = true;
+    else if (c === "[") depth++;
+    else if (c === "]" && --depth === 0) {
+      try {
+        return JSON.parse(data.slice(start, i + 1));
+      } catch {
+        break;
+      }
+    }
+  }
+  throw Error("Invalid reader page array.");
+}
+
 // lib/anime-embed.js
 function frames(html) {
   return [...html.matchAll(/<iframe\b([^>]*)>/gi)].map((m) => attrs(m[1]).src).filter(Boolean);
@@ -196,18 +252,42 @@ async function extractPlayer(start, read, { origin, hosts, server, headers = {},
     const target = url(current, origin);
     if (!target || !hosts.includes(target.host) || visited.has(target.value)) throw Error("Unapproved or repeated anime player URL.");
     visited.add(target.value);
-    const html = (await read(target.value)).replace(/<!--[\s\S]*?-->/g, ""), videos = [];
+    const raw = (await read(target.value)).replace(/<!--[\s\S]*?-->/g, ""), html = raw + "\n" + unpackData(raw), videos = [];
+    if (target.host === "www.blogger.com") {
+      const decoded = html.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+      for (const m of decoded.matchAll(/"(?:[^"\\]|\\.)*"/g)) {
+        let value;
+        try {
+          value = literal(m[0]);
+        } catch {
+          continue;
+        }
+        if (!value.includes('"formats":')) continue;
+        let formats;
+        try {
+          formats = jsonArray(value, "formats");
+        } catch {
+          continue;
+        }
+        for (const format of formats) {
+          if (typeof format.url !== "string" || !/^video\/mp4(?:;|$)/i.test(format.mimeType ?? "")) continue;
+          const p = url(format.url, origin);
+          if (!p?.host.endsWith(".googlevideo.com") || !p.path.startsWith("/videoplayback?")) continue;
+          videos.push(rendition(format.url, origin, { type: "mp4", quality: format.qualityLabel ?? format.quality ?? "auto", headers: { Referer: target.value } }));
+        }
+      }
+    }
     const literals = [...html.matchAll(/(?:\b(?:file|src)|["'](?:file|src)["'])\s*:\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g), ...html.matchAll(/\b(?:var|let|const)\s+primary\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g)];
     for (const match of literals) {
-      const raw = literal(match[1]);
+      const raw2 = literal(match[1]);
       let type;
       try {
-        const inner = /[?&]src=([^&]+)/.exec(raw);
+        const inner = /[?&]src=([^&]+)/.exec(raw2);
         if (inner && /\.m3u8(?:[?#]|$)/i.test(decodeURIComponent(inner[1]))) type = "hls";
       } catch {
       }
       try {
-        videos.push(rendition(raw, origin, { headers: { Referer: target.value, ...headers }, type: type ?? typeHint }));
+        videos.push(rendition(raw2, origin, { headers: { Referer: target.value, ...headers }, type: type ?? typeHint }));
       } catch {
       }
     }
@@ -219,7 +299,7 @@ async function extractPlayer(start, read, { origin, hosts, server, headers = {},
       }
     }
     if (videos.length) return result(server, [...new Map(videos.map((v) => [v.url, v])).values()], { Referer: target.value, ...headers });
-    const next = frames(html).find((raw) => hosts.includes(url(raw, origin)?.host));
+    const next = frames(html).find((raw2) => hosts.includes(url(raw2, origin)?.host));
     if (!next) throw Error("Anime player did not expose supported media data.");
     current = next;
   }
