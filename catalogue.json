@@ -209,5 +209,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "aniworld": {
+    "status": "available",
+    "lang": "de",
+    "previouslyVerified": true
   }
 }

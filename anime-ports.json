@@ -78,7 +78,8 @@
       "name": "AniWorld",
       "language": "de",
       "upstreamPath": "src/anime/aniworld/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "donghuastream",
