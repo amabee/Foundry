@@ -1,0 +1,5 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/kuramanga/index.js";
+test("KuraManga detects the real next page without assuming the server page size",async()=>{
+ const calls=[];const source=activate({host:{fetch:async({url})=>{calls.push(url);return{status:200,body:url.includes('/search?')?JSON.stringify({data:new URL(url).searchParams.get('page')==='1'?[{normalized_title:'fixture',title:'Fixture',thumb:'/cover.jpg'}]:[]}):url.endsWith('/chapter-2-5')?'<img src="https://kuramanga.com/chapters/1.jpg"><img src="/logo.png">':'<a href="/fixture/chapter-2-5">Chapter 2.5</a><a href="/other/chapter-1">Chapter 1</a>'};}}});
+ const page=await source.searchPage('Fixture');assert.equal(page.hasMore,false);assert.equal((await source.searchPage('Fixture',{page:2})).items.length,0);assert.equal(calls.length,2);const chapters=await source.getChapters(page.items[0].id);assert.equal(chapters.length,1);assert.equal(chapters[0].number,'2.5');assert.equal((await source.getPages(chapters[0].id)).length,1);
+});

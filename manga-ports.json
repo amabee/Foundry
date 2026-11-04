@@ -52,7 +52,8 @@
       "name": "KuraManga",
       "language": "en",
       "upstreamPath": "src/manga/kuramanga/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "lelmanga",
