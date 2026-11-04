@@ -12,6 +12,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | --- | --- |
 | HentaiEra (18+) | Native manga source; paged search and reader metadata verified |
 | Hentai2Read (18+) | Experimental native manga source; live metadata returned HTTP 403 |
+| MangaBuddy (MangaK) | Native English manga source; paged search, chapters, reader metadata and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

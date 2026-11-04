@@ -1,0 +1,153 @@
+{
+  "upstream": "https://github.com/Seanime-contributions/Seanime-Providers",
+  "revision": "60f46c873d20efcb977eaf8a010672fe526db229",
+  "providers": [
+    {
+      "folder": "mangaworldadult",
+      "name": "MangaWorldAdult",
+      "language": "it",
+      "upstreamPath": "src/manga/MangaWorldAdult/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "animesama",
+      "name": "AnimeSama (Manga)",
+      "language": "fr",
+      "upstreamPath": "src/manga/animesama/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "asurascans",
+      "name": "AsuraScans",
+      "language": "en",
+      "upstreamPath": "src/manga/asurascans/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "atsumaru",
+      "name": "Atsumaru",
+      "language": "en",
+      "upstreamPath": "src/manga/atsumaru/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "fanfox",
+      "name": "FanFox",
+      "language": "en",
+      "upstreamPath": "src/manga/fanfox/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "komiku",
+      "name": "Komiku",
+      "language": "id",
+      "upstreamPath": "src/manga/komiku/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "kuramanga",
+      "name": "KuraManga",
+      "language": "en",
+      "upstreamPath": "src/manga/kuramanga/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "lelmanga",
+      "name": "LelManga",
+      "language": "fr",
+      "upstreamPath": "src/manga/lelmanga/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "mangaball",
+      "name": "MangaBall",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangaball/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "mangabuddy",
+      "name": "MangaBuddy",
+      "language": "en",
+      "upstreamPath": "src/manga/mangabuddy/provider.js",
+      "status": "verified"
+    },
+    {
+      "folder": "mangadot",
+      "name": "MangaDot",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangadot/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "mangafire",
+      "name": "MangaFire",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangafire/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "mangafreak",
+      "name": "MangaFreak",
+      "language": "en",
+      "upstreamPath": "src/manga/mangafreak/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "mangahub",
+      "name": "MangaHub",
+      "language": "ru",
+      "upstreamPath": "src/manga/mangahub/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "mangakatana",
+      "name": "MangaKatana",
+      "language": "en",
+      "upstreamPath": "src/manga/mangakatana/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "manganato",
+      "name": "MangaBats",
+      "language": "en",
+      "upstreamPath": "src/manga/manganato/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "mangastash",
+      "name": "MangaStash",
+      "language": "en",
+      "upstreamPath": "src/manga/mangastash/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "mynimekumanga",
+      "name": "MyNimeKu (Manga)",
+      "language": "id",
+      "upstreamPath": "src/manga/mynimekumanga/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "ravenscans",
+      "name": "RavenScans",
+      "language": "en",
+      "upstreamPath": "src/manga/ravenscans/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "taiyo",
+      "name": "Taiyo",
+      "language": "pt",
+      "upstreamPath": "src/manga/taiyo/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "xcomic",
+      "name": "xComic",
+      "language": "en",
+      "upstreamPath": "src/manga/xcomic/provider.js",
+      "status": "pending"
+    }
+  ]
+}

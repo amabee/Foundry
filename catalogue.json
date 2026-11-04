@@ -29,5 +29,10 @@
   },
   "hentaiera": {
     "status": "available"
+  },
+  "mangabuddy": {
+    "status": "available",
+    "previouslyVerified": true,
+    "lang": "en"
   }
 }
