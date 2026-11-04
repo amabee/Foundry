@@ -38,6 +38,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | AnimeSaturn Mirror | Native it anime; sandbox search, episodes, streams and media signature verified |
 | AnimeUnion | Native it anime; sandbox search, episodes, streams and media signature verified |
 | AnimeUnity Mirror | Native it anime; sandbox search, episodes, streams and media signature verified |
+| AnimeToast | Native de anime; Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

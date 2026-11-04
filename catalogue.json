@@ -159,5 +159,10 @@
     "status": "available",
     "lang": "it",
     "previouslyVerified": true
+  },
+  "animetoast": {
+    "status": "experimental",
+    "lang": "de",
+    "reason": "Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror"
   }
 }

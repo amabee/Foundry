@@ -197,7 +197,7 @@ async function extractPlayer(start, read, { origin, hosts, server, headers = {},
     if (!target || !hosts.includes(target.host) || visited.has(target.value)) throw Error("Unapproved or repeated anime player URL.");
     visited.add(target.value);
     const html = (await read(target.value)).replace(/<!--[\s\S]*?-->/g, ""), videos = [];
-    const literals = [...html.matchAll(/\bfile\s*:\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g), ...html.matchAll(/\b(?:var|let|const)\s+primary\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g)];
+    const literals = [...html.matchAll(/(?:\b(?:file|src)|["'](?:file|src)["'])\s*:\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g), ...html.matchAll(/\b(?:var|let|const)\s+primary\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g)];
     for (const match of literals) {
       const raw = literal(match[1]);
       let type;

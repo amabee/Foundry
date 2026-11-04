@@ -38,7 +38,8 @@
       "name": "AnimeToast",
       "language": "de",
       "upstreamPath": "src/anime/animetoast/provider.js",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror"
     },
     {
       "folder": "animetvplus",
