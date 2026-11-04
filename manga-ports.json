@@ -127,7 +127,8 @@
       "name": "MangaStash",
       "language": "en",
       "upstreamPath": "src/manga/mangastash/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "mynimekumanga",
