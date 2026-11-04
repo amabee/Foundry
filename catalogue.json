@@ -99,5 +99,10 @@
     "status": "available",
     "lang": "id",
     "previouslyVerified": true
+  },
+  "mangaworldadult": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
   }
 }

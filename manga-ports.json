@@ -7,7 +7,8 @@
       "name": "MangaWorldAdult",
       "language": "it",
       "upstreamPath": "src/manga/MangaWorldAdult/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified-headers"
     },
     {
       "folder": "animesama",

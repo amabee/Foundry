@@ -143,7 +143,7 @@ function createHtmlManga(host, config) {
       return chapters(rows, config.language);
     },
     async getPages(id) {
-      const path = sourceId(id, origin, chapterPattern), html = await read(path), urls = (await config.readerImages(html, path, read)).map((img) => completeImage(typeof img === "string" ? img : img["data-src"] || img["data-original"] || img.src)).filter(Boolean);
+      const path = sourceId(id, origin, chapterPattern), html = await read(config.readerPath?.(path) ?? path), urls = (await config.readerImages(html, path, read)).map((img) => completeImage(typeof img === "string" ? img : img["data-src"] || img["data-original"] || img.src)).filter(Boolean);
       return pages(urls, origin, hosts, config.imageReferer?.(path) ?? origin + path);
     }
   };
