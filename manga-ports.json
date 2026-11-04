@@ -86,7 +86,8 @@
       "name": "MangaDot",
       "language": "multi",
       "upstreamPath": "src/manga/mangadot/provider.ts",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Direct API requires browser verification (HTTP 403)"
     },
     {
       "folder": "mangafire",

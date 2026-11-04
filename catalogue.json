@@ -124,5 +124,10 @@
     "status": "experimental",
     "lang": "multi",
     "reason": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
+  },
+  "mangadot": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Direct API requires browser verification (HTTP 403)"
   }
 }
