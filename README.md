@@ -42,6 +42,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | Shonen | Native multi anime; sandbox search, episodes, streams and media signature verified |
 | AniTube | Native pt anime; sandbox search, episodes, streams and media signature verified |
 | MyNimeKu (Anime) | Native id anime; sandbox search, episodes, streams and media signature verified |
+| DonghuaStream | Native en anime; Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

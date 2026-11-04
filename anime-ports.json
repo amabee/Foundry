@@ -84,7 +84,8 @@
       "name": "DonghuaStream",
       "language": "en",
       "upstreamPath": "src/anime/donghuastream/provider.js",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor"
     },
     {
       "folder": "hentaisaturn",

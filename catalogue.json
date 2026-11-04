@@ -179,5 +179,10 @@
     "status": "available",
     "lang": "id",
     "previouslyVerified": true
+  },
+  "donghuastream": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor"
   }
 }
