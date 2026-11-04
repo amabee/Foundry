@@ -13,7 +13,7 @@
     "asurascans.com",
     "cdn.asurascans.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://asurascans.com",
   "description": "Native English AsuraScans manga search, chapters and reader. Parses Astro metadata without running remote scripts."
 }

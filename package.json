@@ -18,6 +18,7 @@
     "test:manga:live": "node scripts/test-manga-live.mjs"
   },
   "devDependencies": {
+    "@noble/ciphers": "2.4.0",
     "esbuild": "0.28.1"
   }
 }

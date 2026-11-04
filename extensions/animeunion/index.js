@@ -78,8 +78,8 @@ function result(server, videoSources, headers) {
 }
 
 // lib/svelte-data.js
-function decodeSvelte(payload) {
-  const table = payload?.nodes?.find((node2) => node2?.type === "data" && Array.isArray(node2.data))?.data;
+function decodeSvelte(payload, predicate = () => true) {
+  const table = payload?.nodes?.find((node2) => node2?.type === "data" && Array.isArray(node2.data) && predicate(node2.data[0]))?.data;
   if (!Array.isArray(table) || !table.length || table.length > 5e4) throw Error("Invalid Svelte source data.");
   let budget = 1e5;
   function node(value, seen, depth) {

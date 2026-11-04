@@ -18,7 +18,7 @@
     "www.dailymotion.com",
     "rumble.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://donghuastream.org",
   "description": "Native DonghuaStream anime source with real episode numbers and separate Dailymotion/Rumble player extraction."
 }

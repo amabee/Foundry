@@ -31,7 +31,7 @@
     "i09.img00.org",
     "i09.img01.org"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra",
   "homepage": "https://xcomic.me",
   "description": "Native xComic English manga source with source-aware chapter selection and data-only Qwik/Next reader parsing."
 }

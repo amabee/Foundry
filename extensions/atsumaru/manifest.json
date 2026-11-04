@@ -13,7 +13,7 @@
     "atsu.moe",
     "cdn.atsu.moe"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://atsu.moe",
   "description": "Native English Atsumaru manga source with server-side paged search and source chapter/page identities."
 }

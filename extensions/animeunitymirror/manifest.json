@@ -15,7 +15,7 @@
   "hosts": [
     "animeunity.io"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://animeunity.io",
   "description": "Native Italian AnimeUnity mirror on its current origin, with exact episode labels and data-only embedded URL decoding."
 }

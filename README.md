@@ -44,6 +44,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MyNimeKu (Anime) | Native id anime; sandbox search, episodes, streams and media signature verified |
 | DonghuaStream | Native en anime; Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor |
 | NontonAnime | Native id anime; sandbox search, episodes, streams and media signature verified |
+| AnimeAV1 | Native es anime; sandbox search, episodes, streams and media signature verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
@@ -69,7 +70,7 @@ The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages
 
 All 21 manga providers from the reviewed Seanime catalogue have native ports. Seventeen passed live search/chapter/reader checks (MangaWorldAdult used image headers only). RavenScans, MangaBats, MangaDot, and MangaBall remain experimental due to upstream access restrictions; MangaBall metadata works but its image CDN returns HTTP 403. See `manga-ports.json` for the reviewed upstream revision and per-source status. These are checks at a point in time, not ongoing availability guarantees.
 
-LelManga, MangaKatana, and large AnimeSama pages also need Nova’s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
+LelManga, MangaKatana, and large AnimeSama pages also need Novaâ€™s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
 
 ## Publishing a source change
 

@@ -17,7 +17,7 @@
     "api.anivideo.net",
     "www.blogger.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://www.anitube.zip",
   "description": "Native Portuguese AniTube anime source with separate player mirrors and bounded data-only unpacking."
 }

@@ -14,7 +14,7 @@
     "api.komiku.org",
     "img.komiku.org"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://komiku.org",
   "description": "Native Indonesian Komiku manga source with its separate search API and reader image grants."
 }

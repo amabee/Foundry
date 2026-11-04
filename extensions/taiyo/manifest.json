@@ -15,7 +15,7 @@
     "cdn.taiyo.moe",
     "meilisearch.taiyo.moe"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://taiyo.moe",
   "description": "Native Portuguese Taiyo manga with complete chapter pagination. Uses only the public search key published by the website."
 }

@@ -17,7 +17,7 @@
     "animeheaven.me",
     "ax.animeheaven.me"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://animeheaven.me",
   "description": "Native English AnimeHeaven source. Uses the public episode selector cookie, source-owned episode IDs and the actual video player."
 }

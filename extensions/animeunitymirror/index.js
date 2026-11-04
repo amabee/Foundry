@@ -164,7 +164,7 @@ function frames(html) {
 }
 
 // lib/base64.js
-function decodeBase64(value) {
+function decodeBase64Bytes(value) {
   if (typeof value !== "string" || value.length > 65536) throw Error("Encoded source data exceeds its limit.");
   const input = value.replace(/\s/g, "").replace(/-/g, "+").replace(/_/g, "/");
   if (!/^[A-Za-z0-9+/]*={0,2}$/.test(input) || input.length % 4 === 1) throw Error("Invalid encoded source data.");
@@ -179,8 +179,12 @@ function decodeBase64(value) {
       bytes.push(n >> bits & 255);
     }
   }
+  return Uint8Array.from(bytes);
+}
+function decodeBase64(value) {
+  const bytes = decodeBase64Bytes(value);
   try {
-    return decodeURIComponent(bytes.map((b) => "%" + b.toString(16).padStart(2, "0")).join(""));
+    return decodeURIComponent([...bytes].map((b) => "%" + b.toString(16).padStart(2, "0")).join(""));
   } catch {
     throw Error("Invalid UTF-8 source data.");
   }

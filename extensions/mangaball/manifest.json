@@ -14,7 +14,7 @@
     "bulbasaur.poke-black-and-white.net",
     "cdn.mangaupdates.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://mangaball.com",
   "description": "Native multilingual MangaBall using the current public API, complete translations and actual search pagination."
 }

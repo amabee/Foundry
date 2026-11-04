@@ -12,7 +12,7 @@
   "hosts": [
     "mangadot.net"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://mangadot.net",
   "description": "Experimental native multilingual MangaDot source. Direct API requests may require browser verification. No local solver or browser cookies."
 }

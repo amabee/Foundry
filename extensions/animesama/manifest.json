@@ -13,7 +13,7 @@
     "anime-sama.to",
     "raw.githubusercontent.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://anime-sama.to",
   "description": "Native French AnimeSama manga source. Scan panels retain separate editions, stable chapter IDs and fresh page counts."
 }

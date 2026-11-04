@@ -189,5 +189,10 @@
     "status": "available",
     "lang": "id",
     "previouslyVerified": true
+  },
+  "animeav1": {
+    "status": "available",
+    "lang": "es",
+    "previouslyVerified": true
   }
 }

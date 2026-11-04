@@ -16,7 +16,7 @@
     "animesaturn.ro",
     "cdn2.megaplay.su"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://animesaturn.ro",
   "description": "Native Italian AnimeSaturn mirror source with source-owned episode links and bounded, data-only nested player extraction."
 }

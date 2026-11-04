@@ -1,0 +1,9 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{activate}from'../extensions/animeav1/index.js';import{decryptByse,decryptCbcHex}from'../lib/player-crypto.js';import{createCipheriv}from'node:crypto';
+const svelte=(table)=>JSON.stringify({nodes:[{type:'data',data:[{user:1},null]},{type:'data',data:table}]});
+test('AnimeAV1 uses actual episode numbers and never relabels subtitles as dub',async()=>{
+ const source=activate({host:{fetch:async r=>({status:200,body:r.url.includes('/catalogo/')?svelte([{results:1},[2],{slug:3,title:4},'fixture','Fixture']):r.url.endsWith('/fixture/__data.json')?svelte([{media:1},{slug:2,episodes:3},'fixture',[4],{number:5,title:6},1.5,'Special']):svelte([{embeds:1},{SUB:2},[3],{server:4,url:5},'HLS','https://player.zilla-networks.com/play/fixture'] )})}});const title=(await source.search('Fixture'))[0],eps=await source.getEpisodes(title.id);assert.equal(eps[0].number,1.5);const streams=await source.getStreams(eps[0].id);assert.equal(streams.length,1);assert.equal(streams[0].server,'HLS · Sub');assert.equal(streams[0].videoSources[0].url,'https://player.zilla-networks.com/m3u8/fixture');
+});
+test('public player AES data matches Node vectors and rejects a modified GCM tag',()=>{
+ const text='{"sources":[]}',key=Buffer.alloc(32,7),iv=Buffer.alloc(12,3),cipher=createCipheriv('aes-256-gcm',key,iv),encrypted=Buffer.concat([cipher.update(text),cipher.final(),cipher.getAuthTag()]);const playback={key_parts:[key.toString('base64')],iv:iv.toString('base64'),payload:encrypted.toString('base64')};assert.equal(decryptByse(playback),text);encrypted[encrypted.length-1]^=1;assert.throws(()=>decryptByse({...playback,payload:encrypted.toString('base64')}));
+ const cbc=createCipheriv('aes-128-cbc',Buffer.from('kiemtienmua911ca'),Buffer.from('1234567890oiuytr'));assert.equal(decryptCbcHex(Buffer.concat([cbc.update(text),cbc.final()]).toString('hex'),'kiemtienmua911ca','1234567890oiuytr'),text);
+});

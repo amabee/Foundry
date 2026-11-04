@@ -15,7 +15,7 @@
   "hosts": [
     "www.mynimeku.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://www.mynimeku.com",
   "description": "Native Indonesian MyNimeKu anime source using a current public search nonce, real episode numbers and separate playable mirrors."
 }

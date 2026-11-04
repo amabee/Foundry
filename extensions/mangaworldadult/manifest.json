@@ -13,7 +13,7 @@
     "www.mangaworldadult.net",
     "cdn.mangaworld.mx"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors; kRYstall9",
+  "author": "Vestra contributors",
   "homepage": "https://www.mangaworldadult.net",
   "description": "Native Italian adult manga source with source search and chapter regions. Catalogue matching is handled by Vestra, without extra AniList requests from the extension."
 }

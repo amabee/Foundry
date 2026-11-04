@@ -14,7 +14,7 @@
   "hosts": [
     "www.animegg.org"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://www.animegg.org",
   "description": "Native English AnimeGG source with separate subtitle/dub mirrors and all available video qualities."
 }

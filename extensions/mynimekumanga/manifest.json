@@ -13,7 +13,7 @@
     "www.mynimeku.com",
     "image.mydriveku.my.id"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://www.mynimeku.com",
   "description": "Native Indonesian MyNimeKu manga source using the site's public live-search configuration and reader metadata."
 }

@@ -188,11 +188,15 @@ function htmlAnime(config, { host }) {
 // lib/packed-data.js
 function unpackData(html) {
   const quoted = `("(?:[^"\\\\]|\\\\.)*"|'(?:[^'\\\\]|\\\\.)*')`;
-  const re = new RegExp("\\}\\s*\\(\\s*" + quoted + "\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*" + quoted + `\\.split\\(["']\\|["']\\)`, "g");
+  const re = new RegExp(
+    "\\}\\s*\\(\\s*" + quoted + "\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*" + quoted + `\\.split\\(["']\\|["']\\)`,
+    "g"
+  );
   const results = [];
   for (const m of html.matchAll(re)) {
     const radix = Number(m[2]), count = Number(m[3]);
-    if (radix < 2 || radix > 62 || count > 1e4) throw Error("Packed source data exceeds its limit.");
+    if (radix < 2 || radix > 62 || count > 1e4)
+      throw Error("Packed source data exceeds its limit.");
     const payload = literal(m[1]), table = literal(m[4]).split("|"), alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let size = 0;
     const decoded = payload.replace(/\b[0-9a-zA-Z]+\b/g, (word) => {
@@ -205,7 +209,8 @@ function unpackData(html) {
       }
       const value = table[n] || word;
       size += value.length;
-      if (size > 1024 * 1024) throw Error("Unpacked source data exceeds its limit.");
+      if (size > 1024 * 1024)
+        throw Error("Unpacked source data exceeds its limit.");
       return value;
     });
     results.push(decoded);

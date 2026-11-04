@@ -7,7 +7,8 @@
       "name": "AnimeAV1",
       "language": "es",
       "upstreamPath": "src/anime/AnimeAV1/main.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "animegg",

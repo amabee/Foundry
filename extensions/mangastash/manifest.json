@@ -12,7 +12,7 @@
   "hosts": [
     "mangastash.org"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://mangastash.org",
   "description": "Native English MangaStash source with source result rows, stable chapter IDs and ordered reader pages."
 }
