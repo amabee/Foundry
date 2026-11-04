@@ -214,5 +214,10 @@
     "status": "available",
     "lang": "de",
     "previouslyVerified": true
+  },
+  "animetvplus": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass"
   }
 }

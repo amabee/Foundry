@@ -49,6 +49,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | HentaiWorld (18+) | Native it anime; verified headers only; public metadata and media HEAD passed |
 | Shiro | Native en anime; sandbox search, episodes, streams and media signature verified |
 | AniWorld | Native de anime; sandbox search, episodes, streams and media signature verified |
+| AniTVPlus | Native multi anime; Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

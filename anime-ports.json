@@ -47,7 +47,8 @@
       "name": "AniTVPlus",
       "language": "multi",
       "upstreamPath": "src/anime/animetvplus/provider.js",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass"
     },
     {
       "folder": "animeunion",
