@@ -155,7 +155,8 @@
       "name": "Taiyo",
       "language": "pt",
       "upstreamPath": "src/manga/taiyo/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "xcomic",

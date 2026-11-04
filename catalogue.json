@@ -109,5 +109,10 @@
     "status": "available",
     "lang": "fr",
     "previouslyVerified": true
+  },
+  "taiyo": {
+    "status": "available",
+    "lang": "pt",
+    "previouslyVerified": true
   }
 }
