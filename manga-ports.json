@@ -94,7 +94,8 @@
       "name": "MangaFire",
       "language": "multi",
       "upstreamPath": "src/manga/mangafire/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "mangafreak",

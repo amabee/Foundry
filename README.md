@@ -32,6 +32,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | xComic | Native en manga; sandbox search, chapters, pages and sample image verified |
 | MangaBall | Experimental native manga; Search and 4228 multilingual chapters verified; image CDN returns HTTP 403 |
 | MangaDot | Experimental native manga; Direct API requires browser verification (HTTP 403) |
+| MangaFire | Native multi manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

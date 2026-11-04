@@ -129,5 +129,10 @@
     "status": "experimental",
     "lang": "multi",
     "reason": "Direct API requires browser verification (HTTP 403)"
+  },
+  "mangafire": {
+    "status": "available",
+    "lang": "multi",
+    "previouslyVerified": true
   }
 }
