@@ -29,5 +29,110 @@
   },
   "hentaiera": {
     "status": "available"
+  },
+  "mangabuddy": {
+    "status": "available",
+    "previouslyVerified": true,
+    "lang": "en"
+  },
+  "mangakatana": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "mangahub": {
+    "status": "available",
+    "lang": "ru",
+    "previouslyVerified": true
+  },
+  "asurascans": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "atsumaru": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "fanfox": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "kuramanga": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "lelmanga": {
+    "status": "available",
+    "lang": "fr",
+    "previouslyVerified": true
+  },
+  "mangafreak": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "ravenscans": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Live metadata is blocked by an automated-access challenge."
+  },
+  "mangastash": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "manganato": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Live metadata is blocked by an automated-access challenge."
+  },
+  "komiku": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
+  },
+  "mynimekumanga": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
+  },
+  "mangaworldadult": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "animesama": {
+    "status": "available",
+    "lang": "fr",
+    "previouslyVerified": true
+  },
+  "taiyo": {
+    "status": "available",
+    "lang": "pt",
+    "previouslyVerified": true
+  },
+  "xcomic": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "mangaball": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
+  },
+  "mangadot": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Direct API requires browser verification (HTTP 403)"
+  },
+  "mangafire": {
+    "status": "available",
+    "lang": "multi",
+    "previouslyVerified": true
   }
 }

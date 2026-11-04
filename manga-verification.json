@@ -1,0 +1,331 @@
+{
+  "upstreamRevision": "60f46c873d20efcb977eaf8a010672fe526db229",
+  "vestraRevision": "1eea0bbc429670f167c7b37b2c4505960db4d7d6",
+  "results": [
+    {
+      "source": "vestra-mangaworldadult",
+      "checkedAt": "2026-11-04T07:18:21.376Z",
+      "searchResults": 6,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 16,
+      "pages": 35,
+      "imageHosts": [
+        "cdn.mangaworld.mx"
+      ],
+      "sampleStatus": 200,
+      "sampleScope": "headers only",
+      "status": "verified",
+      "note": "verified-headers"
+    },
+    {
+      "source": "vestra-animesama",
+      "checkedAt": "2026-11-04T09:24:27.493Z",
+      "searchResults": 4,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 713,
+      "pages": 2,
+      "imageHosts": [
+        "anime-sama.to"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes",
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-asurascans",
+      "checkedAt": "2026-11-04T06:50:54.913Z",
+      "searchResults": 11,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 25,
+      "pages": 40,
+      "imageHosts": [
+        "cdn.asurascans.com"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-atsumaru",
+      "checkedAt": "2026-11-04T06:52:10.806Z",
+      "searchResults": 24,
+      "secondPageResults": 13,
+      "hasMore": true,
+      "chapters": 701,
+      "pages": 59,
+      "imageHosts": [
+        "cdn.atsu.moe"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-fanfox",
+      "checkedAt": "2026-11-04T06:55:38.786Z",
+      "searchResults": 1,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 159,
+      "pages": 39,
+      "imageHosts": [
+        "zjcdn.mangafox.me"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-komiku",
+      "checkedAt": "2026-11-04T07:11:41.329Z",
+      "searchResults": 4,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 17,
+      "pages": 14,
+      "imageHosts": [
+        "img.komiku.org"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-kuramanga",
+      "checkedAt": "2026-11-04T06:57:36.008Z",
+      "searchResults": 18,
+      "secondPageResults": 6,
+      "hasMore": true,
+      "chapters": 23,
+      "pages": 38,
+      "imageHosts": [
+        "shadowabyss.com"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-lelmanga",
+      "checkedAt": "2026-11-04T07:01:17.853Z",
+      "searchResults": 1,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 44,
+      "pages": 4,
+      "imageHosts": [
+        "i2.wp.com",
+        "i1.wp.com"
+      ],
+      "sampleStatus": 200,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mangaball",
+      "checkedAt": "2026-11-04T09:33:56.639Z",
+      "searchResults": 24,
+      "secondPageResults": 24,
+      "hasMore": true,
+      "chapters": 4228,
+      "pages": 46,
+      "imageHosts": [
+        "bulbasaur.poke-black-and-white.net"
+      ],
+      "sampleStatus": null,
+      "sampleScope": "metadata only",
+      "status": "experimental",
+      "note": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
+    },
+    {
+      "source": "vestra-mangabuddy",
+      "checkedAt": "2026-11-04T06:40:09.726Z",
+      "searchResults": 24,
+      "secondPageResults": 24,
+      "hasMore": true,
+      "chapters": 748,
+      "pages": 46,
+      "imageHosts": [
+        "rx.qvzrc.org",
+        "rx.qvzrd.org",
+        "rx.qvzre.org",
+        "rx.qvzrf.org",
+        "rx.qvzrg.org",
+        "rx.qvzrh.org",
+        "rx.qvzri.org",
+        "rx.qvzrk.org",
+        "rx.qvzra.org",
+        "rx.qvzrb.org"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mangadot",
+      "checkedOn": "2026-11-04",
+      "status": "experimental",
+      "note": "Direct API requires browser verification (HTTP 403)",
+      "sampleScope": "upstream access denied"
+    },
+    {
+      "source": "vestra-mangafire",
+      "checkedAt": "2026-11-04T09:36:31.640Z",
+      "searchResults": 24,
+      "secondPageResults": 24,
+      "hasMore": true,
+      "chapters": 2371,
+      "pages": 54,
+      "imageHosts": [
+        "k99.mfcdn1.xyz"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes",
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mangafreak",
+      "checkedAt": "2026-11-04T07:03:19.781Z",
+      "searchResults": 8,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 80,
+      "pages": 58,
+      "imageHosts": [
+        "images.mangafreak.me"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mangahub",
+      "checkedAt": "2026-11-04T06:47:10.333Z",
+      "searchResults": 15,
+      "secondPageResults": 15,
+      "hasMore": false,
+      "chapters": 331,
+      "pages": 60,
+      "imageHosts": [
+        "ty2.statichub.org",
+        "fd1.statichub.org"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mangakatana",
+      "checkedAt": "2026-11-04T06:44:44.540Z",
+      "searchResults": 16,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 700,
+      "pages": 60,
+      "imageHosts": [
+        "i1.mangakatana.com"
+      ],
+      "sampleStatus": 200,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-manganato",
+      "checkedOn": "2026-11-04",
+      "status": "experimental",
+      "note": "Live metadata is blocked by an automated-access challenge.",
+      "sampleScope": "upstream access denied"
+    },
+    {
+      "source": "vestra-mangastash",
+      "checkedAt": "2026-11-04T07:06:54.541Z",
+      "searchResults": 24,
+      "secondPageResults": 13,
+      "hasMore": true,
+      "chapters": 749,
+      "pages": 46,
+      "imageHosts": [
+        "mangastash.org"
+      ],
+      "sampleStatus": 206,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-mynimekumanga",
+      "checkedAt": "2026-11-04T07:15:20.268Z",
+      "searchResults": 2,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 18,
+      "pages": 25,
+      "imageHosts": [
+        "image.mydriveku.my.id"
+      ],
+      "sampleStatus": 200,
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-ravenscans",
+      "checkedOn": "2026-11-04",
+      "status": "experimental",
+      "note": "Live metadata is blocked by an automated-access challenge.",
+      "sampleScope": "upstream access denied"
+    },
+    {
+      "source": "vestra-taiyo",
+      "checkedAt": "2026-11-04T09:26:17.690Z",
+      "searchResults": 18,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 700,
+      "pages": 52,
+      "imageHosts": [
+        "cdn.taiyo.moe"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes",
+      "status": "verified",
+      "note": "verified"
+    },
+    {
+      "source": "vestra-xcomic",
+      "checkedAt": "2026-11-04T09:40:14.611Z",
+      "searchResults": 48,
+      "secondPageResults": 48,
+      "hasMore": true,
+      "chapters": 7,
+      "pages": 32,
+      "imageHosts": [
+        "i08.img00.org",
+        "i00.img01.org",
+        "i05.img01.org",
+        "i06.img02.org",
+        "i09.img00.org",
+        "i00.img02.org",
+        "i00.img00.org",
+        "i04.img01.org",
+        "i02.img02.org",
+        "i01.img01.org",
+        "i01.img00.org",
+        "i03.img01.org",
+        "i09.img01.org",
+        "i07.img02.org",
+        "i08.img01.org",
+        "i07.img01.org",
+        "i07.img00.org",
+        "i06.img00.org"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes",
+      "status": "verified",
+      "note": "verified"
+    }
+  ]
+}

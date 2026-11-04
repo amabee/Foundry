@@ -1,0 +1,173 @@
+{
+  "upstream": "https://github.com/Seanime-contributions/Seanime-Providers",
+  "revision": "60f46c873d20efcb977eaf8a010672fe526db229",
+  "providers": [
+    {
+      "folder": "mangaworldadult",
+      "name": "MangaWorldAdult",
+      "language": "it",
+      "upstreamPath": "src/manga/MangaWorldAdult/provider.ts",
+      "status": "verified",
+      "verification": "verified-headers"
+    },
+    {
+      "folder": "animesama",
+      "name": "AnimeSama (Manga)",
+      "language": "fr",
+      "upstreamPath": "src/manga/animesama/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "asurascans",
+      "name": "AsuraScans",
+      "language": "en",
+      "upstreamPath": "src/manga/asurascans/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "atsumaru",
+      "name": "Atsumaru",
+      "language": "en",
+      "upstreamPath": "src/manga/atsumaru/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "fanfox",
+      "name": "FanFox",
+      "language": "en",
+      "upstreamPath": "src/manga/fanfox/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "komiku",
+      "name": "Komiku",
+      "language": "id",
+      "upstreamPath": "src/manga/komiku/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "kuramanga",
+      "name": "KuraManga",
+      "language": "en",
+      "upstreamPath": "src/manga/kuramanga/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "lelmanga",
+      "name": "LelManga",
+      "language": "fr",
+      "upstreamPath": "src/manga/lelmanga/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "mangaball",
+      "name": "MangaBall",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangaball/provider.ts",
+      "status": "experimental",
+      "verification": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
+    },
+    {
+      "folder": "mangabuddy",
+      "name": "MangaBuddy",
+      "language": "en",
+      "upstreamPath": "src/manga/mangabuddy/provider.js",
+      "status": "verified"
+    },
+    {
+      "folder": "mangadot",
+      "name": "MangaDot",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangadot/provider.ts",
+      "status": "experimental",
+      "verification": "Direct API requires browser verification (HTTP 403)"
+    },
+    {
+      "folder": "mangafire",
+      "name": "MangaFire",
+      "language": "multi",
+      "upstreamPath": "src/manga/mangafire/provider.ts",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "mangafreak",
+      "name": "MangaFreak",
+      "language": "en",
+      "upstreamPath": "src/manga/mangafreak/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "mangahub",
+      "name": "MangaHub",
+      "language": "ru",
+      "upstreamPath": "src/manga/mangahub/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "mangakatana",
+      "name": "MangaKatana",
+      "language": "en",
+      "upstreamPath": "src/manga/mangakatana/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "manganato",
+      "name": "MangaBats",
+      "language": "en",
+      "upstreamPath": "src/manga/manganato/provider.js",
+      "status": "experimental",
+      "verification": "Live metadata is blocked by an automated-access challenge."
+    },
+    {
+      "folder": "mangastash",
+      "name": "MangaStash",
+      "language": "en",
+      "upstreamPath": "src/manga/mangastash/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "mynimekumanga",
+      "name": "MyNimeKu (Manga)",
+      "language": "id",
+      "upstreamPath": "src/manga/mynimekumanga/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "ravenscans",
+      "name": "RavenScans",
+      "language": "en",
+      "upstreamPath": "src/manga/ravenscans/provider.js",
+      "status": "experimental",
+      "verification": "Live metadata is blocked by an automated-access challenge."
+    },
+    {
+      "folder": "taiyo",
+      "name": "Taiyo",
+      "language": "pt",
+      "upstreamPath": "src/manga/taiyo/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    },
+    {
+      "folder": "xcomic",
+      "name": "xComic",
+      "language": "en",
+      "upstreamPath": "src/manga/xcomic/provider.js",
+      "status": "verified",
+      "verification": "verified"
+    }
+  ]
+}

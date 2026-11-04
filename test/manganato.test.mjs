@@ -1,0 +1,5 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/manganato/index.js";
+test("MangaBats fetches every source chapter batch and parses reader arrays without evaluation",async()=>{
+ const source=activate({host:{fetch:async({url})=>({status:200,body:url.includes('/search/story/')?'<div class="story_item"><a href="/manga/fixture">Fixture</a><img src="/cover.jpg"></div>':url.includes('/api/manga/')?JSON.stringify({data:{chapters:Array.from({length:new URL(url).searchParams.get('offset')==='0'?50:1},(_,i)=>({chapter_num:i+Number(new URL(url).searchParams.get('offset')),chapter_slug:'chapter-'+(i+Number(new URL(url).searchParams.get('offset')))}))}}):"var cdns=['https://www.mangabats.com/'];var chapterImages=['book/1.jpg','book/2.jpg'];"})}});
+ const book=(await source.search('Fixture'))[0];const c=await source.getChapters(book.id);assert.equal(c.length,51);assert.equal(c.at(-1).number,'50');const p=await source.getPages(c[0].id);assert.equal(p.length,2);assert.equal(p[0].url,'https://www.mangabats.com/book/1.jpg');
+});

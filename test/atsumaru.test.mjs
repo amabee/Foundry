@@ -1,0 +1,6 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/atsumaru/index.js";
+test("Atsumaru paginates the API and preserves same-number chapter editions and page order",async()=>{
+ const source=activate({host:{fetch:async({url})=>({status:200,body:JSON.stringify(url.includes('/documents/search')?{hits:[{document:{id:'book',title:'Fixture',posterMedium:'/cover.avif'}}],page:Number(new URL(url).searchParams.get('page')),found:25}:url.includes('/allChapters')?{chapters:[{id:'first',number:2.5,title:'A'},{id:'second',number:2.5,title:'B'}]}:{readChapter:{pages:[{number:2,image:'/2.jpg'},{number:1,image:'/1.jpg'}]}})})}});
+ const first=await source.searchPage('Fixture',{page:1,limit:24});assert.equal(first.hasMore,true);assert.equal((await source.searchPage('Fixture',{page:2,limit:24})).hasMore,false);
+ const chapters=await source.getChapters('book');assert.equal(chapters.length,2);assert.notEqual(chapters[0].id,chapters[1].id);assert.equal(chapters[0].number,'2.5');const pages=await source.getPages(chapters[0].id);assert(pages[0].url.endsWith('/1.jpg'));assert.equal(pages[0].headers.Referer,'https://atsu.moe/read/book/first');await assert.rejects(source.getPages('https://evil.example'),/identity/);
+});

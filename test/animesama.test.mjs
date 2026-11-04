@@ -1,0 +1,5 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/animesama/index.js";
+test("AnimeSama preserves exact oeuvre spacing, panel identities and refreshed page counts",async()=>{
+ let count=2;const source=activate({host:{fetch:async request=>({status:200,body:request.method==='POST'?'<a class="asn-search-result" href="/catalogue/fixture"><h3 class="asn-search-result-title">Fixture</h3><p class="asn-search-meta">Scans</p></a><a class="asn-search-result" href="/catalogue/anime"><p class="asn-search-meta">Anime</p></a>':request.url.includes('get_nb_')?(assert(request.url.includes('Fixture%20%20')),JSON.stringify({'1':count})):request.url.endsWith('/scan/vf/')?'<h1 id="titreOeuvre">Fixture  </h1>':'panneauScan("Scans", "scan/vf");'})}});
+ const b=(await source.search('Fixture'))[0],c=(await source.getChapters(b.id))[0];assert.equal(c.id,'fixture|scan/vf|1');assert.equal((await source.getPages(c.id)).length,2);count=3;assert.equal((await source.getPages(c.id)).length,3);
+});
