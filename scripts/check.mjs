@@ -26,7 +26,7 @@ for (const folder of folders) {
   assert.equal(manifest.main, "index.js");
   assert.ok(manifest.hosts.length > 0 && manifest.hosts.length <= 256);
   for (const host of manifest.hosts) assert.ok(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(host) && host.includes(".") && !isIP(host), `Invalid host grant: ${host}`);
-  for (const permission of manifest.permissions) assert.ok(["network", "network:session"].includes(permission));
+  for (const permission of manifest.permissions) assert.ok(["network", "network:session", "network:cookies"].includes(permission));
   for (const kind of manifest.kinds) assert.ok(["anime", "movie", "tv"].includes(kind));
   if(manifest.role==="manga-source")assert.equal(manifest.kinds.length,0);
   if (catalogue[folder].status !== "blocked") {

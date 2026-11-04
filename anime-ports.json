@@ -22,7 +22,8 @@
       "name": "AnimeHeaven",
       "language": "en",
       "upstreamPath": "src/anime/animeheaven/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "animesaturnmirror",

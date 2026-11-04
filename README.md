@@ -34,6 +34,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaDot | Experimental native manga; Direct API requires browser verification (HTTP 403) |
 | MangaFire | Native multi manga; sandbox search, chapters, pages and sample image verified |
 | AnimeGG | Native en anime; Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails |
+| AnimeHeaven | Native en anime; sandbox search, episodes, streams and media signature verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

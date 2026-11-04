@@ -139,5 +139,10 @@
     "status": "experimental",
     "lang": "en",
     "reason": "Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails"
+  },
+  "animeheaven": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }
