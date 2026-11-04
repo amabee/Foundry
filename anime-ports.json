@@ -114,7 +114,8 @@
       "name": "NonTonAnime",
       "language": "id",
       "upstreamPath": "src/anime/nontonanime/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "shiro",

@@ -9,7 +9,7 @@ try {
  const titles=await runtime.source.search(query,{limit:50},context());assert(titles.length,'Expected search results');
  const title=titles.find(t=>t.title.toLowerCase()===query.toLowerCase())??titles[0];
  const episodes=await runtime.source.getEpisodes(title.id,context());assert(episodes.length,'Expected episodes');
- const episode=episodes.find(e=>e.number===1)??episodes[0],streams=await runtime.source.getStreams(episode.id,context());assert(streams.length,'Expected streams');assert.deepEqual(runtime.warnings,[]);
+ const wanted=process.argv.includes('--episode')?Number(process.argv[process.argv.indexOf('--episode')+1]):1;const episode=episodes.find(e=>e.number===wanted)??episodes[0],streams=await runtime.source.getStreams(episode.id,context());assert(streams.length,'Expected streams');assert.deepEqual(runtime.warnings,[]);
  let sampleStatus=null,sampleScope='metadata only';
  if(process.argv.includes('--sample-media')||process.argv.includes('--media-headers')){
   const stream=streams[0],video=stream.videoSources[0],headers={...stream.headers,...video.headers};

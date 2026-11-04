@@ -184,5 +184,10 @@
     "status": "experimental",
     "lang": "en",
     "reason": "Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor"
+  },
+  "nontonanime": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
   }
 }
