@@ -12,3 +12,5 @@ test("MangaFire loads every page and translation with stable distinct chapter ID
   else d={data:{pages:[{url:'https://k99.mfcdn1.xyz/page.jpg'}]}};return{status:200,body:JSON.stringify(d)};}}});
  assert.equal((await source.searchPage('Fixture',{page:2})).hasMore,true);const cs=await source.getChapters('book');assert.equal(cs.length,4);assert.equal(cs[3].language,'fr');assert.equal(cs[3].index,3);assert.equal((await source.getPages('en1')).length,1);
 });
+
+test("MangaFire accepts the reviewed Latna CDN hosts and still refuses unrelated destinations",async()=>{let page='https://l1n.mfcdn2.xyz/0.jpg';const source=activate({host:{fetch:async()=>({status:200,body:JSON.stringify({data:{pages:[{url:page}]}})})}});for(const host of ['l1n.mfcdn2.xyz','q73.mfcdn1.xyz','l1n.mfcdn3.xyz']){page='https://'+host+'/page.jpg';assert.equal((await source.getPages('123'))[0].url,page);}page='https://unreviewed.example/page.jpg';await assert.rejects(()=>source.getPages('123'),/unapproved image host/);});

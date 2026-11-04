@@ -66,5 +66,45 @@
       }
     ],
     "limitation": "First image checked in each chapter; exact installed-app failure has not been reproduced."
+  },
+  "latnaMangaFire": {
+    "reproduced": "getPages rejected the source image CDN host with the installed host grant.",
+    "reviewedImageHosts": [
+      {
+        "chapter": "0",
+        "language": "en",
+        "hosts": [
+          "l1n.mfcdn2.xyz"
+        ]
+      },
+      {
+        "chapter": "1",
+        "language": "en",
+        "hosts": [
+          "q73.mfcdn1.xyz"
+        ]
+      },
+      {
+        "chapter": "307",
+        "language": "en",
+        "hosts": [
+          "l1n.mfcdn3.xyz"
+        ]
+      }
+    ],
+    "afterFix": {
+      "source": "vestra-mangafire",
+      "checkedAt": "2026-11-04T15:28:03.777Z",
+      "searchResults": 24,
+      "secondPageResults": 24,
+      "hasMore": true,
+      "chapters": 579,
+      "pages": 77,
+      "imageHosts": [
+        "l1n.mfcdn2.xyz"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes"
+    }
   }
 }
