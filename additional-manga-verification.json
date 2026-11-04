@@ -1,0 +1,70 @@
+{
+  "scope": "Point-in-time live public API/HTML and sandbox checks with bounded raster downloads; no availability guarantee.",
+  "sources": [
+    {
+      "source": "vestra-mangadex",
+      "checkedAt": "2026-11-04T15:15:35.583Z",
+      "searchResults": 21,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 136,
+      "pages": 51,
+      "imageHosts": [
+        "cmdxd98sb0x3yprd.mangadex.network"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes"
+    },
+    {
+      "source": "vestra-weebcentral",
+      "checkedAt": "2026-11-04T15:14:24.104Z",
+      "searchResults": 8,
+      "secondPageResults": 0,
+      "hasMore": false,
+      "chapters": 701,
+      "pages": 59,
+      "imageHosts": [
+        "hot.planeptune.us"
+      ],
+      "sampleStatus": 206,
+      "sampleScope": "raster bytes"
+    },
+    {
+      "title": "Latna Saga: Survival of a Sword King",
+      "source": "vestra-weebcentral",
+      "liveCheck": {
+        "source": "vestra-weebcentral",
+        "checkedAt": "2026-11-04T15:20:56.081Z",
+        "searchResults": 1,
+        "secondPageResults": 0,
+        "hasMore": false,
+        "chapters": 308,
+        "pages": 89,
+        "imageHosts": [
+          "official.lowee.us"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "raster bytes"
+      }
+    }
+  ],
+  "latnaReader": {
+    "source": "vestra-mangabuddy",
+    "scope": "Native QuickJS, permission broker, MangaService, C# image worker and opaque reader handles",
+    "checks": [
+      {
+        "chapter": "1",
+        "pages": 108,
+        "firstImageMime": "image/webp",
+        "firstImageBytes": 221040
+      },
+      {
+        "chapter": "307",
+        "pages": 131,
+        "firstImageMime": "image/webp",
+        "firstImageBytes": 93944
+      }
+    ],
+    "limitation": "First image checked in each chapter; exact installed-app failure has not been reproduced."
+  }
+}

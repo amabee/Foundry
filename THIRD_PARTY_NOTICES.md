@@ -11,3 +11,7 @@ Copyright (c) 2025 Pal and the upstream contributors. Licensed under the MIT lic
 ## noble-ciphers
 
 AnimeAV1 bundles the AES implementation from [noble-ciphers](https://github.com/paulmillr/noble-ciphers), version 2.4.0, MIT. The complete notice is retained in [licenses/noble-ciphers-MIT.txt](licenses/noble-ciphers-MIT.txt).
+
+## Source identification artwork
+
+Source logos copied from the reviewed MIT provider repository retain that repository’s notice above. Additional favicons come from their source homepages (Hentai2Read, HentaiEra, xComic and WeebCentral); MangaDex uses the public MangaDex GitHub organization avatar. Artwork identifies the respective source and is not Vestra branding. Logos are stored as raster/icon assets beside their source manifests.

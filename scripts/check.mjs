@@ -25,6 +25,12 @@ for (const folder of folders) {
   assert.match(manifest.sdkVersion, /^1\.\d+\.\d+$/);
   assert.ok(["stream-source","manga-source"].includes(manifest.role));
   assert.equal(manifest.main, "index.js");
+  if (manifest.icon?.startsWith("https://raw.githubusercontent.com/amabee/Foundry/main/extensions/")) {
+    const icon = new URL(manifest.icon);
+    assert.match(icon.pathname, new RegExp("^/amabee/Foundry/main/extensions/" + folder + "/icon\\.(?:png|jpg|jpeg|webp|gif|ico)$"));
+    const bytes = await readFile(join(root, "extensions", folder, icon.pathname.split("/").at(-1)));
+    assert.ok(bytes.length > 0 && bytes.length <= 512 * 1024, "Source logo must be bounded and committed.");
+  }
   assert.ok(manifest.hosts.length > 0 && manifest.hosts.length <= 256);
   for (const host of manifest.hosts) assert.ok(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(host) && host.includes(".") && !isIP(host), `Invalid host grant: ${host}`);
   for (const permission of manifest.permissions) assert.ok(["network", "network:session", "network:cookies"].includes(permission));
