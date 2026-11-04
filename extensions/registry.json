@@ -9,9 +9,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://h5.inmoviebox.com/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/moviebox/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/moviebox/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/moviebox",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/moviebox/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/moviebox/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/moviebox",
     "tags": [
       "vestra",
       "foundry",
@@ -35,9 +35,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://kisskh.co/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kisskh/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kisskh/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kisskh",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kisskh/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kisskh/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kisskh",
     "tags": [
       "vestra",
       "foundry",
@@ -61,9 +61,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://archive.org/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/internet-archive/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/internet-archive/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/internet-archive",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/internet-archive/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/internet-archive/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/internet-archive",
     "tags": [
       "vestra",
       "foundry",
@@ -86,9 +86,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://vixsrc.to/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vixsrc/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vixsrc/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vixsrc",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vixsrc/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vixsrc/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vixsrc",
     "tags": [
       "vestra",
       "foundry",
@@ -112,9 +112,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/desiflix/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/desiflix/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/desiflix",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/desiflix/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/desiflix/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/desiflix",
     "tags": [
       "vestra",
       "foundry",
@@ -138,9 +138,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "https://vidlink.pro/favicon.ico",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vidlink/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vidlink/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/vidlink",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vidlink/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vidlink/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/vidlink",
     "tags": [
       "vestra",
       "foundry",
@@ -165,9 +165,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentai2read/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentai2read/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentai2read",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentai2read/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentai2read/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentai2read",
     "tags": [
       "vestra",
       "foundry",
@@ -191,9 +191,9 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentaiera/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentaiera/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/hentaiera",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentaiera/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentaiera/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/hentaiera",
     "tags": [
       "vestra",
       "foundry",
@@ -209,16 +209,16 @@
   {
     "id": "vestra-mangabuddy",
     "name": "MangaBuddy (MangaK)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English manga search and reading via MangaK, the current backend of Seanime's MangaBuddy provider. Includes paged search and stable title identities.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangabuddy/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangabuddy/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangabuddy",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangabuddy/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangabuddy/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangabuddy",
     "tags": [
       "vestra",
       "foundry",
@@ -226,7 +226,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -234,16 +234,16 @@
   {
     "id": "vestra-mangakatana",
     "name": "MangaKatana",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English manga search, available chapters and reader with source referers and exact image host grants.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangakatana/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangakatana/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangakatana",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangakatana/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangakatana/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangakatana",
     "tags": [
       "vestra",
       "foundry",
@@ -251,7 +251,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -259,16 +259,16 @@
   {
     "id": "vestra-mangahub",
     "name": "MangaHub (Russian)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native Russian manga source with full search pages, chapter lists and ordered reader images. Uses the MangaHub.ru backend from Seanime Providers.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "ru",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangahub/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangahub/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangahub",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangahub/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangahub/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangahub",
     "tags": [
       "vestra",
       "foundry",
@@ -276,7 +276,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -284,16 +284,16 @@
   {
     "id": "vestra-asurascans",
     "name": "AsuraScans",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English AsuraScans manga search, chapters and reader. Parses Astro metadata without running remote scripts.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/asurascans/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/asurascans/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/asurascans",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/asurascans/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/asurascans/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/asurascans",
     "tags": [
       "vestra",
       "foundry",
@@ -301,7 +301,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -309,16 +309,16 @@
   {
     "id": "vestra-atsumaru",
     "name": "Atsumaru",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English Atsumaru manga source with server-side paged search and source chapter/page identities.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/atsumaru/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/atsumaru/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/atsumaru",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/atsumaru/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/atsumaru/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/atsumaru",
     "tags": [
       "vestra",
       "foundry",
@@ -326,7 +326,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -334,16 +334,16 @@
   {
     "id": "vestra-fanfox",
     "name": "FanFox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English FanFox manga search, chapter lists and reader with reviewed image hosts.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/fanfox/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/fanfox/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/fanfox",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/fanfox/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/fanfox/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/fanfox",
     "tags": [
       "vestra",
       "foundry",
@@ -351,7 +351,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -359,16 +359,16 @@
   {
     "id": "vestra-kuramanga",
     "name": "KuraManga",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English KuraManga source with API search pagination, stable source identities and reader-only chapter images.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kuramanga/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kuramanga/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/kuramanga",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kuramanga/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kuramanga/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/kuramanga",
     "tags": [
       "vestra",
       "foundry",
@@ -376,7 +376,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -384,16 +384,16 @@
   {
     "id": "vestra-lelmanga",
     "name": "LelManga (French)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native French LelManga manga search, source chapter numbering and reader images.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "fr",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/lelmanga/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/lelmanga/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/lelmanga",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/lelmanga/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/lelmanga/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/lelmanga",
     "tags": [
       "vestra",
       "foundry",
@@ -401,7 +401,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -409,16 +409,16 @@
   {
     "id": "vestra-mangafreak",
     "name": "MangaFreak",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English MangaFreak search, source chapter lists and direct reader images without an external image proxy.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafreak/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafreak/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafreak",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafreak/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafreak/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafreak",
     "tags": [
       "vestra",
       "foundry",
@@ -426,7 +426,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -434,16 +434,16 @@
   {
     "id": "vestra-ravenscans",
     "name": "RavenScans",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Experimental: Live metadata is blocked by an automated-access challenge. Native English RavenScans source with source search pages, stable chapter identities and reader-region images.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/ravenscans/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/ravenscans/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/ravenscans",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/ravenscans/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/ravenscans/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/ravenscans",
     "tags": [
       "vestra",
       "foundry",
@@ -460,16 +460,16 @@
   {
     "id": "vestra-mangastash",
     "name": "MangaStash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native English MangaStash source with source result rows, stable chapter IDs and ordered reader pages.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangastash/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangastash/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangastash",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangastash/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangastash/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangastash",
     "tags": [
       "vestra",
       "foundry",
@@ -477,7 +477,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -485,16 +485,16 @@
   {
     "id": "vestra-manganato",
     "name": "MangaBats (Manganato)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Experimental: Live metadata is blocked by an automated-access challenge. Native English port of Seanime's Manganato provider, which currently uses MangaBats. Fetches every chapter page and parses reader arrays as data.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/manganato/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/manganato/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/manganato",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/manganato/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/manganato/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/manganato",
     "tags": [
       "vestra",
       "foundry",
@@ -511,141 +511,16 @@
   {
     "id": "vestra-komiku",
     "name": "Komiku (Indonesian)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native Indonesian Komiku manga source with its separate search API and reader image grants.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "id",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/komiku/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/komiku/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/komiku",
-    "tags": [
-      "vestra",
-      "foundry",
-      "native"
-    ],
-    "workingTag": true,
-    "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
-    "kinds": [
-      "manga"
-    ]
-  },
-  {
-    "id": "vestra-mynimekumanga",
-    "name": "MyNimeKu (Indonesian Manga)",
-    "version": "1.0.0",
-    "author": "Vestra contributors; Seanime Providers contributors",
-    "description": "Native Indonesian MyNimeKu manga source using the site's public live-search configuration and reader metadata.",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "id",
-    "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mynimekumanga/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mynimekumanga/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mynimekumanga",
-    "tags": [
-      "vestra",
-      "foundry",
-      "native"
-    ],
-    "workingTag": true,
-    "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
-    "kinds": [
-      "manga"
-    ]
-  },
-  {
-    "id": "vestra-mangaworldadult",
-    "name": "MangaWorldAdult (Italian, 18+)",
-    "version": "1.0.0",
-    "author": "Vestra contributors; Seanime Providers contributors; kRYstall9",
-    "description": "Native Italian adult manga source with source search and chapter regions. Catalogue matching is handled by Vestra, without extra AniList requests from the extension.",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "it",
-    "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaworldadult/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaworldadult/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaworldadult",
-    "tags": [
-      "vestra",
-      "foundry",
-      "native"
-    ],
-    "workingTag": true,
-    "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
-    "kinds": [
-      "manga"
-    ]
-  },
-  {
-    "id": "vestra-animesama",
-    "name": "AnimeSama (French Manga)",
-    "version": "1.0.0",
-    "author": "Vestra contributors; Seanime Providers contributors",
-    "description": "Native French AnimeSama manga source. Scan panels retain separate editions, stable chapter IDs and fresh page counts.",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "fr",
-    "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesama/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesama/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesama",
-    "tags": [
-      "vestra",
-      "foundry",
-      "native"
-    ],
-    "workingTag": true,
-    "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
-    "kinds": [
-      "manga"
-    ]
-  },
-  {
-    "id": "vestra-taiyo",
-    "name": "Taiyo (Portuguese Manga)",
-    "version": "1.0.0",
-    "author": "Vestra contributors; Seanime Providers contributors",
-    "description": "Native Portuguese Taiyo manga with complete chapter pagination. Uses only the public search key published by the website.",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "pt",
-    "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/taiyo/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/taiyo/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/taiyo",
-    "tags": [
-      "vestra",
-      "foundry",
-      "native"
-    ],
-    "workingTag": true,
-    "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
-    "kinds": [
-      "manga"
-    ]
-  },
-  {
-    "id": "vestra-xcomic",
-    "name": "xComic",
-    "version": "1.0.1",
-    "author": "Vestra contributors; Seanime Providers contributors",
-    "description": "Native xComic English manga source with source-aware chapter selection and data-only Qwik/Next reader parsing.",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "en",
-    "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/xcomic/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/xcomic/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/xcomic",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/komiku/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/komiku/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/komiku",
     "tags": [
       "vestra",
       "foundry",
@@ -659,18 +534,143 @@
     ]
   },
   {
+    "id": "vestra-mynimekumanga",
+    "name": "MyNimeKu (Indonesian Manga)",
+    "version": "1.0.1",
+    "author": "Vestra contributors; Seanime Providers contributors",
+    "description": "Native Indonesian MyNimeKu manga source using the site's public live-search configuration and reader metadata.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "id",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mynimekumanga/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mynimekumanga/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mynimekumanga",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.1",
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
+    "id": "vestra-mangaworldadult",
+    "name": "MangaWorldAdult (Italian, 18+)",
+    "version": "1.0.1",
+    "author": "Vestra contributors; Seanime Providers contributors; kRYstall9",
+    "description": "Native Italian adult manga source with source search and chapter regions. Catalogue matching is handled by Vestra, without extra AniList requests from the extension.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "it",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaworldadult/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaworldadult/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaworldadult",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.1",
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
+    "id": "vestra-animesama",
+    "name": "AnimeSama (French Manga)",
+    "version": "1.0.1",
+    "author": "Vestra contributors; Seanime Providers contributors",
+    "description": "Native French AnimeSama manga source. Scan panels retain separate editions, stable chapter IDs and fresh page counts.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "fr",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesama/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesama/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesama",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.1",
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
+    "id": "vestra-taiyo",
+    "name": "Taiyo (Portuguese Manga)",
+    "version": "1.0.1",
+    "author": "Vestra contributors; Seanime Providers contributors",
+    "description": "Native Portuguese Taiyo manga with complete chapter pagination. Uses only the public search key published by the website.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "pt",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/taiyo/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/taiyo/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/taiyo",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.1",
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
+    "id": "vestra-xcomic",
+    "name": "xComic",
+    "version": "1.0.2",
+    "author": "Vestra contributors; Seanime Providers contributors",
+    "description": "Native xComic English manga source with source-aware chapter selection and data-only Qwik/Next reader parsing.",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/xcomic/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/xcomic/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/xcomic",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.2",
+    "kinds": [
+      "manga"
+    ]
+  },
+  {
     "id": "vestra-mangaball",
     "name": "MangaBall",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Experimental: Search and 4228 multilingual chapters verified; image CDN returns HTTP 403 Native multilingual MangaBall using the current public API, complete translations and actual search pagination.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaball/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaball/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangaball",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaball/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaball/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangaball",
     "tags": [
       "vestra",
       "foundry",
@@ -687,16 +687,16 @@
   {
     "id": "vestra-mangadot",
     "name": "MangaDot",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Experimental: Direct API requires browser verification (HTTP 403) Experimental native multilingual MangaDot source. Direct API requests may require browser verification. No local solver or browser cookies.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangadot/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangadot/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangadot",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangadot/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangadot/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangadot",
     "tags": [
       "vestra",
       "foundry",
@@ -713,16 +713,16 @@
   {
     "id": "vestra-mangafire",
     "name": "MangaFire",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vestra contributors; Seanime Providers contributors",
     "description": "Native multilingual MangaFire API source with local request signing and full chapter pagination.",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafire/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafire/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/mangafire",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafire/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafire/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/mangafire",
     "tags": [
       "vestra",
       "foundry",
@@ -730,7 +730,7 @@
     ],
     "workingTag": true,
     "brokenTag": false,
-    "lastWorkingVersion": "1.0.0",
+    "lastWorkingVersion": "1.0.1",
     "kinds": [
       "manga"
     ]
@@ -745,9 +745,9 @@
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animegg/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animegg/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animegg",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animegg/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animegg/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animegg",
     "tags": [
       "vestra",
       "foundry",
@@ -771,9 +771,9 @@
     "language": "javascript",
     "lang": "en",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeheaven/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeheaven/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeheaven",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeheaven/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeheaven/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeheaven",
     "tags": [
       "vestra",
       "foundry",
@@ -796,9 +796,9 @@
     "language": "javascript",
     "lang": "it",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesaturnmirror/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesaturnmirror/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animesaturnmirror",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesaturnmirror/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesaturnmirror/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animesaturnmirror",
     "tags": [
       "vestra",
       "foundry",
@@ -821,9 +821,9 @@
     "language": "javascript",
     "lang": "it",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunion/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunion/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunion",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunion/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunion/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunion",
     "tags": [
       "vestra",
       "foundry",
@@ -846,9 +846,9 @@
     "language": "javascript",
     "lang": "it",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunitymirror/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunitymirror/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animeunitymirror",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunitymirror/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunitymirror/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animeunitymirror",
     "tags": [
       "vestra",
       "foundry",
@@ -871,9 +871,9 @@
     "language": "javascript",
     "lang": "de",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animetoast/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animetoast/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/animetoast",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animetoast/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animetoast/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/animetoast",
     "tags": [
       "vestra",
       "foundry",
@@ -897,9 +897,34 @@
     "language": "javascript",
     "lang": "multi",
     "icon": "",
-    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/shonen/manifest.json",
-    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/shonen/index.js",
-    "website": "https://github.com/amabee/Foundry/tree/9363c230f3b87a163e5c525cf9e24b34474dda95/extensions/shonen",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/shonen/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/shonen/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/shonen",
+    "tags": [
+      "vestra",
+      "foundry",
+      "native"
+    ],
+    "workingTag": true,
+    "brokenTag": false,
+    "lastWorkingVersion": "1.0.0",
+    "kinds": [
+      "anime"
+    ]
+  },
+  {
+    "id": "vestra-anitube",
+    "name": "AniTube",
+    "version": "1.0.0",
+    "author": "Vestra contributors; Seanime Providers contributors",
+    "description": "Native Portuguese AniTube anime source with separate player mirrors and bounded data-only unpacking.",
+    "type": "custom-source",
+    "language": "javascript",
+    "lang": "pt",
+    "icon": "",
+    "manifestURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/anitube/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/amabee/Foundry/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/anitube/index.js",
+    "website": "https://github.com/amabee/Foundry/tree/e532d439ab52e8dd59b31f821d6fb540106c6156/extensions/anitube",
     "tags": [
       "vestra",
       "foundry",
