@@ -101,7 +101,8 @@
       "name": "HentaiWorld",
       "language": "it",
       "upstreamPath": "src/anime/hentaiworld/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified headers only; public metadata and media HEAD passed"
     },
     {
       "folder": "mynimeku",

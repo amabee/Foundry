@@ -46,6 +46,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | NontonAnime | Native id anime; sandbox search, episodes, streams and media signature verified |
 | AnimeAV1 | Native es anime; sandbox search, episodes, streams and media signature verified |
 | HentaiSaturn (18+) | Native it anime; verified headers only; public metadata and media HEAD passed |
+| HentaiWorld (18+) | Native it anime; verified headers only; public metadata and media HEAD passed |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
