@@ -64,5 +64,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "lelmanga": {
+    "status": "available",
+    "lang": "fr",
+    "previouslyVerified": true
   }
 }

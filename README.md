@@ -19,6 +19,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | Atsumaru | Native en manga; sandbox search, chapters, pages and sample image verified |
 | FanFox | Native en manga; sandbox search, chapters, pages and sample image verified |
 | KuraManga | Native en manga; sandbox search, chapters, pages and sample image verified |
+| LelManga (French) | Native fr manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

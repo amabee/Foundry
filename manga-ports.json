@@ -60,7 +60,8 @@
       "name": "LelManga",
       "language": "fr",
       "upstreamPath": "src/manga/lelmanga/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "mangaball",

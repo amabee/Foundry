@@ -9,7 +9,7 @@ const query=process.argv.includes("--query")?process.argv[process.argv.indexOf("
 const runtime=await openMangaRuntime(name,vestra);
 try {
   const search=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",[query,{page:1,limit:24}]));assert(search.items.length);
-  const second=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",[query,{page:2,limit:24}]));
+  const second=search.hasMore?runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",[query,{page:2,limit:24}])):{items:[],hasMore:false};
   const chapters=runtime.sdk.mangaChaptersSchema.parse(await runtime.call("getChapters",[search.items[0].id]));assert(chapters.length);
   const pages=runtime.sdk.mangaPagesSchema.parse(await runtime.call("getPages",[chapters[0].id]));assert(pages.length);
   const hosts=[...new Set(pages.map(page=>new URL(page.url).hostname))];assert(hosts.every(host=>runtime.manifest.hosts.includes(host)));
