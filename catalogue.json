@@ -69,5 +69,10 @@
     "status": "available",
     "lang": "fr",
     "previouslyVerified": true
+  },
+  "mangafreak": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }

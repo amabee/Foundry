@@ -1,0 +1,5 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/mangafreak/index.js";
+test("MangaFreak deduplicates chapter regions and uses reader images without a proxy",async()=>{
+ const source=activate({host:{fetch:async({url})=>({status:200,body:url.includes('/Find/')?'<div class="manga_search_item"><img src="/cover.jpg"><h3><a href="/Manga/Fixture">Fixture</a></h3></div>':url.includes('/Read')?'<div class="mySlides fade"><img src="https://images.mangafreak.me/1.jpg"></div>':'<div class="manga_series_list"><a href="/Read1_Fixture_1">001 - Test</a></div><div class="series_sub_chapter_list"><a href="/Read1_Fixture_1">001 - Test</a><a href="/Read1_Other_2">002</a></div>'})}});
+ const rows=await source.search('Fixture');const chapters=await source.getChapters(rows[0].id);assert.equal(chapters.length,1);assert.equal(chapters[0].number,'1');const pages=await source.getPages(chapters[0].id);assert.equal(pages[0].url,'https://images.mangafreak.me/1.jpg');
+});
