@@ -125,10 +125,24 @@ function identity(value) {
   return value;
 }
 function activate({ host }) {
-  const read = reader(host, ORIGIN);
+  const read = reader(host, ORIGIN), cache = /* @__PURE__ */ new Map();
+  async function readPage(q, page) {
+    const key = q + "|" + page, hit = cache.get(key);
+    if (hit && hit.until > Date.now()) return hit.value;
+    const value = await fetchPage(q, page);
+    if (cache.size >= 8) cache.delete(cache.keys().next().value);
+    cache.set(key, { value, until: Date.now() + 2e4 });
+    return value;
+  }
   async function searchPage(query, options = {}) {
     const { page } = pageOptions(options), q = String(query).trim().slice(0, 500);
     if (!q) return { items: [], hasMore: false };
+    const current = await readPage(q, page);
+    if (current.hasMore || !current.items.length || page === 1e3) return current;
+    const next = await readPage(q, page + 1), ids = new Set(current.items.map((i) => i.id));
+    return { items: current.items, hasMore: next.items.some((i) => !ids.has(i.id)) };
+  }
+  async function fetchPage(q, page) {
     const html = await read(`/search?word=${encodeURIComponent(q)}&sortby=score&page=${page}`), found = /* @__PURE__ */ new Map();
     for (const a of links(html)) {
       const p = url(a.href, ORIGIN), match = /^\/title\/([a-z0-9_-]+)$/.exec(p?.path ?? "");
@@ -151,11 +165,11 @@ function activate({ host }) {
       return (await searchPage(q, { ...o, page: 1 })).items;
     },
     async getChapters(value) {
-      const book = identity(value), html = await read("/title/" + book), sources = [];
-      for (const [i, a] of links(html).filter((a2) => /^\/source\//.test(a2.href)).entries()) {
+      const book = identity(value), html = await read("/title/" + book), sources = [], sourceLinks = links(html).filter((a) => /^\/source\//.test(a.href));
+      for (const [i, a] of sourceLinks.entries()) {
         const p = url(a.href, ORIGIN), m = /^\/source\/([a-z0-9_-]+)$/.exec(p?.path ?? "");
         if (p?.host !== "xcomic.me" || !m) continue;
-        const next = links(html).filter((a2) => /^\/source\//.test(a2.href))[i + 1]?.offset ?? -1, card = html.slice(a.offset, next < 0 ? html.length : next), label = text(a.body), before = html.slice(Math.max(0, a.offset - 180), a.offset), language = label + " " + ([...before.matchAll(/[\u{1F1E6}-\u{1F1FF}]{2}/gu)].pop()?.[0] ?? "");
+        const next = sourceLinks[i + 1]?.offset ?? -1, card = html.slice(a.offset, next < 0 ? html.length : next), label = text(a.body), before = html.slice(Math.max(0, a.offset - 180), a.offset), language = label + " " + ([...before.matchAll(/[\u{1F1E6}-\u{1F1FF}]{2}/gu)].pop()?.[0] ?? "");
         if (!/🇬🇧|🇺🇸|🇨🇦|🇦🇺|🇳🇿|🇮🇪|\bEnglish\b/u.test(language)) continue;
         const count = Number((text(card).match(/([\d,]+)\s+chapters?/i)?.[1] ?? "0").replace(/,/g, ""));
         sources.push({ id: m[1], count });

@@ -8,3 +8,8 @@ test("xComic selects the largest English edition and reads Qwik data without unr
   return{status:200,body};}}});
  assert.equal((await source.searchPage('Fixture')).hasMore,true);const chapters=await source.getChapters('book');assert(visited.some(u=>u.endsWith('/source/large')));assert.equal(chapters[0].id,'c1');assert.equal((await source.getPages('c1')).length,1);
 });
+test("xComic discovers additional result pages when the site renders no Next link",async()=>{
+ const calls=[];const source=activate({host:{fetch:async r=>{const page=Number(new URL(r.url).searchParams.get('page'));calls.push(page);return{status:200,body:page<3?`<a href="/title/book${page}">Fixture ${page}</a>`:''};}}});
+ const first=await source.searchPage('Fixture'),second=await source.searchPage('Fixture',{page:2});
+ assert.equal(first.hasMore,true);assert.equal(second.hasMore,false);assert.equal(second.items[0].id,'book2');assert.deepEqual(calls,[1,2,3]);
+});

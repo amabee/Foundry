@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Vestra Foundry — native extension sources and registry for Vestra.",
+  "description": "Vestra Foundry \u00e2\u20ac\u201d native extension sources and registry for Vestra.",
   "license": "MIT",
   "packageManager": "pnpm@11.9.0",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "registry:generate": "node scripts/generate-registry.mjs",
     "check": "node scripts/check.mjs",
-    "test": "pnpm run build && node --test test/*.test.mjs && pnpm run check"
+    "test": "pnpm run build && node --test test/*.test.mjs && pnpm run check",
+    "test:sandbox": "node scripts/test-manga-sandbox.mjs",
+    "test:manga:live": "node scripts/test-manga-live.mjs"
   },
-  "devDependencies": { "esbuild": "0.28.1" }
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
 }

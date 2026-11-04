@@ -52,13 +52,17 @@ pnpm install --frozen-lockfile
 pnpm test
 ```
 
-`pnpm build` bundles KissKH and the manga sources from their `src/` entries. Manga source utilities live in `lib/manga-sites.js` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
+`pnpm build` bundles KissKH and the manga sources from their `src/` entries. Manga source utilities live in `lib/` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
 
-The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Integration/live commands in individual source READMEs refer to that Vestra checkout.
+The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Set `VESTRA_CHECKOUT` to a local Vestra checkout (defaults to sibling `../Vestra`) and run `pnpm test:sandbox` to replay all manga fixture assertions inside QuickJS with permission and result-schema checks. This is offline. Use `pnpm test:manga:live --live <folder> --sample-image` for an explicit live reader check, or `--image-headers` to check metadata and image headers without downloading image bytes.
+
+All 21 manga providers from the reviewed Seanime catalogue have native ports. Seventeen passed live search/chapter/reader checks (MangaWorldAdult used image headers only). RavenScans, MangaBats, MangaDot, and MangaBall remain experimental due to upstream access restrictions; MangaBall metadata works but its image CDN returns HTTP 403. See `manga-ports.json` for the reviewed upstream revision and per-source status. These are checks at a point in time, not ongoing availability guarantees.
+
+LelManga, MangaKatana, and large AnimeSama pages also need Nova’s public-CDN, binary-raster, and image-size fixes on Vestra main. The previously published v0.2.6 installer predates those fixes.
 
 ## Publishing a source change
 
-1. Change the extension and bump its manifest version when behavior or permissions change. Build KissKH if its source changed.
+1. Change the extension and bump its manifest version when behavior or permissions change. Run `pnpm build` when a source or shared helper changes.
 2. Commit the source, manifest and generated payload together.
 3. Run `pnpm registry:generate HEAD`. The registry references that complete commit SHA, never a mutable branch for executable code.
 4. Run `pnpm test`, commit the registry update and open a pull request. Review host grants and catalogue status along with code changes.

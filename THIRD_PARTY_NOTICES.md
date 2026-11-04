@@ -2,7 +2,7 @@
 
 ## Seanime Providers
 
-Native manga ports identify their upstream file and reviewed commit in their README and in `manga-ports.json`. Adaptations preserve the native Vestra SDK interface, network permission broker and exact host grants; they do not depend on Seanime's runtime.
+`manga-ports.json` identifies the reviewed upstream file and commit for every new native manga port. Source READMEs describe its native implementation and current limitations. Adaptations preserve the native Vestra SDK interface, network permission broker and exact host grants; they do not depend on Seanime's runtime.
 
 Source: [Seanime-contributions/Seanime-Providers](https://github.com/Seanime-contributions/Seanime-Providers), reviewed at commit `60f46c873d20efcb977eaf8a010672fe526db229`.
 
