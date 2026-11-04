@@ -29,7 +29,8 @@
       "name": "Atsumaru",
       "language": "en",
       "upstreamPath": "src/manga/atsumaru/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "fanfox",
