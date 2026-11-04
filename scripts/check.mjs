@@ -19,6 +19,7 @@ let networkCalls = 0;
 for (const folder of folders) {
   const manifest = JSON.parse(await readFile(join(root, "extensions", folder, "manifest.json"), "utf8"));
   assert.equal(manifest.id, `vestra-${folder}`);
+  assert.ok(!manifest.author?.includes("Seanime Providers contributors"), "Manifest author must use Foundry branding; preserve upstream notices in licensing files.");
   assert.ok(!ids.has(manifest.id)); ids.add(manifest.id);
   assert.match(manifest.version, /^\d+\.\d+\.\d+$/);
   assert.match(manifest.sdkVersion, /^1\.\d+\.\d+$/);

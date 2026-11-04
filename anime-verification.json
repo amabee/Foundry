@@ -1,0 +1,312 @@
+{
+  "scope": "Point-in-time source checks, not continuous playback guarantees. Adult sources use metadata and media HEAD only. Reports contain no media URLs or session tokens.",
+  "providers": [
+    {
+      "folder": "animeav1",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-animeav1",
+        "checkedAt": "2026-11-04T11:28:46.460Z",
+        "searchResults": 19,
+        "episodes": 220,
+        "servers": [
+          "HLS \u00b7 Sub",
+          "Byse \u00b7 Sub",
+          "HLS \u00b7 Dub",
+          "Byse \u00b7 Dub"
+        ],
+        "renditions": 4,
+        "mediaHosts": [
+          "player.zilla-networks.com",
+          "edge1-frankfurt-sprintcdn.owphbf24.com",
+          "edge2-waw-sprintcdn.r66nv9ed.com"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "animegg",
+      "status": "experimental",
+      "verification": "Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails",
+      "liveCheck": {
+        "source": "vestra-animegg",
+        "checkedAt": "2026-11-04T10:39:06.670Z",
+        "searchResults": 50,
+        "episodes": 220,
+        "servers": [
+          "GG-SUB",
+          "GG-DUB"
+        ],
+        "renditions": 2,
+        "mediaHosts": [
+          "www.animegg.org"
+        ],
+        "sampleStatus": null,
+        "sampleScope": "metadata only"
+      }
+    },
+    {
+      "folder": "animeheaven",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-animeheaven",
+        "checkedAt": "2026-11-04T10:47:36.933Z",
+        "searchResults": 3,
+        "episodes": 220,
+        "servers": [
+          "AnimeHeaven"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "rk.animeheaven.me"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "animesaturnmirror",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-animesaturnmirror",
+        "checkedAt": "2026-11-04T10:51:22.209Z",
+        "searchResults": 10,
+        "episodes": 1,
+        "servers": [
+          "AnimeSaturn"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "cdn2.megaplay.su"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "animetoast",
+      "status": "experimental",
+      "verification": "Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror"
+    },
+    {
+      "folder": "animetvplus",
+      "status": "experimental",
+      "verification": "Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass"
+    },
+    {
+      "folder": "animeunion",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-animeunion",
+        "checkedAt": "2026-11-04T10:54:05.901Z",
+        "searchResults": 48,
+        "episodes": 220,
+        "servers": [
+          "Sub",
+          "Dub"
+        ],
+        "renditions": 2,
+        "mediaHosts": [
+          "cdn.budgethosting.online"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "animeunitymirror",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-animeunitymirror",
+        "checkedAt": "2026-11-04T10:57:02.906Z",
+        "searchResults": 1,
+        "episodes": 5,
+        "servers": [
+          "AnimeUnity"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "srv18-tsurukusa.sweetpixel.org"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "anitube",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-anitube",
+        "checkedAt": "2026-11-04T11:11:13.834Z",
+        "searchResults": 8,
+        "episodes": 500,
+        "servers": [
+          "Blog 1"
+        ],
+        "renditions": 2,
+        "mediaHosts": [
+          "rr2---sn-2aqu-jbtz.googlevideo.com"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "aniworld",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-aniworld",
+        "checkedAt": "2026-11-04T14:47:18.600Z",
+        "searchResults": 4,
+        "episodes": 226,
+        "servers": [
+          "VidMoly \u00b7 English Sub",
+          "VidMoly \u00b7 German Sub"
+        ],
+        "renditions": 2,
+        "mediaHosts": [
+          "prx-1566-ant-r.vmpx.online",
+          "prx-1590-for.vmnow.online"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "donghuastream",
+      "status": "experimental",
+      "verification": "Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor"
+    },
+    {
+      "folder": "hentaisaturn",
+      "status": "verified",
+      "verification": "verified headers only; public metadata and media HEAD passed",
+      "liveCheck": {
+        "source": "vestra-hentaisaturn",
+        "checkedAt": "2026-11-04T14:41:01.027Z",
+        "searchResults": 1,
+        "episodes": 8,
+        "servers": [
+          "Saturn"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "server.hcontent.net"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "headers only"
+      }
+    },
+    {
+      "folder": "hentaiworld",
+      "status": "verified",
+      "verification": "verified headers only; public metadata and media HEAD passed",
+      "liveCheck": {
+        "source": "vestra-hentaiworld",
+        "checkedAt": "2026-11-04T14:42:33.003Z",
+        "searchResults": 1,
+        "episodes": 8,
+        "servers": [
+          "HentaiWorld"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "server.hcherry.net"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "headers only"
+      }
+    },
+    {
+      "folder": "mynimeku",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-mynimeku",
+        "checkedAt": "2026-11-04T11:15:23.133Z",
+        "searchResults": 6,
+        "episodes": 1,
+        "servers": [
+          "CLOUD",
+          "DRIVE"
+        ],
+        "renditions": 6,
+        "mediaHosts": [
+          "players.myplayerku.my.id"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "nontonanime",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-nontonanime",
+        "checkedAt": "2026-11-04T11:23:01.616Z",
+        "searchResults": 1,
+        "episodes": 33,
+        "servers": [
+          "Server-1"
+        ],
+        "renditions": 1,
+        "mediaHosts": [
+          "hugh.cdn.rumble.cloud"
+        ],
+        "sampleStatus": 206,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "shiro",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-shiro",
+        "checkedAt": "2026-11-04T14:44:00.305Z",
+        "searchResults": 26,
+        "episodes": 220,
+        "servers": [
+          "Sub",
+          "Dub"
+        ],
+        "renditions": 4,
+        "mediaHosts": [
+          "anv.to"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "bounded media signature"
+      }
+    },
+    {
+      "folder": "shonen",
+      "status": "verified",
+      "verification": "verified",
+      "liveCheck": {
+        "source": "vestra-shonen",
+        "checkedAt": "2026-11-04T11:01:45.732Z",
+        "searchResults": 30,
+        "episodes": 100,
+        "servers": [
+          "Sub"
+        ],
+        "renditions": 2,
+        "mediaHosts": [
+          "shonen.to",
+          "anigato.lol"
+        ],
+        "sampleStatus": 200,
+        "sampleScope": "bounded media signature"
+      }
+    }
+  ]
+}

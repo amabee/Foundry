@@ -69,13 +69,21 @@ pnpm install --frozen-lockfile
 pnpm test
 ```
 
-`pnpm build` bundles KissKH and the manga sources from their `src/` entries. Manga source utilities live in `lib/` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
+`pnpm build` bundles KissKH and the native manga/anime sources from their `src/` entries. Shared source utilities live in `lib/` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
 
-The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Set `VESTRA_CHECKOUT` to a local Vestra checkout (defaults to sibling `../Vestra`) and run `pnpm test:sandbox` to replay all manga fixture assertions inside QuickJS with permission and result-schema checks. This is offline. Use `pnpm test:manga:live --live <folder> --sample-image` for an explicit live reader check, or `--image-headers` to check metadata and image headers without downloading image bytes.
+The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Set `VESTRA_CHECKOUT` to a local Vestra checkout (defaults to sibling `../Vestra`) and run `pnpm test:sandbox` to replay all manga and anime fixture assertions inside QuickJS with permission and result-schema checks. This is offline. Use `pnpm test:manga:live --live <folder> --sample-image` for an explicit live reader check, or `--image-headers` to check metadata and image headers without downloading image bytes.
 
 All 21 manga providers from the reviewed Seanime catalogue have native ports. Seventeen passed live search/chapter/reader checks (MangaWorldAdult used image headers only). RavenScans, MangaBats, MangaDot, and MangaBall remain experimental due to upstream access restrictions; MangaBall metadata works but its image CDN returns HTTP 403. See `manga-ports.json` for the reviewed upstream revision and per-source status. These are checks at a point in time, not ongoing availability guarantees.
 
 LelManga, MangaKatana, and large AnimeSama pages also need Nova’s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
+
+## Native anime sources
+
+All 17 reviewed anime providers now have native Foundry ports. Thirteen passed live search, episode and stream checks; HentaiSaturn and HentaiWorld used media headers only. AnimeGG (HTTP CDN downgrade), AnimeToast (changed mirrors), DonghuaStream (new unsupported StreamPlay player), and AniTVPlus (metadata endpoints timing out) remain explicitly experimental. See [anime-verification.json](anime-verification.json) for sanitized check results and [anime-ports.json](anime-ports.json) for provenance.
+
+Use `pnpm test:anime:live --live <folder> --sample-media` for an opt-in bounded media-signature check, or `--media-headers` for a HEAD-only check. Some catalogues require `--query` and `--episode`; see each source README. These commands never solve browser challenges or execute downloaded player scripts.
+
+The anime collection requires Nova's SDK 1.7 runtime changes (extension-owned cookie consent, exact-host redirects and timeout cleanup). The published v0.2.7 installer predates those changes. Cookie access is separately reviewed; extensions never receive the browser's cookie jar. Manifest authors use Vestra branding, and standalone payloads retain required license notices.
 
 ## Publishing a source change
 
