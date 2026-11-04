@@ -50,6 +50,8 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | Shiro | Native en anime; sandbox search, episodes, streams and media signature verified |
 | AniWorld | Native de anime; sandbox search, episodes, streams and media signature verified |
 | AniTVPlus | Native multi anime; Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass |
+| MangaDex | Native English manga; public search, chapters, pages and raster bytes verified |
+| WeebCentral | Native English manga; full chapter list, ordered reader pages and raster bytes verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
@@ -76,6 +78,8 @@ The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages
 All 21 manga providers from the reviewed Seanime catalogue have native ports. Seventeen passed live search/chapter/reader checks (MangaWorldAdult used image headers only). RavenScans, MangaBats, MangaDot, and MangaBall remain experimental due to upstream access restrictions; MangaBall metadata works but its image CDN returns HTTP 403. See `manga-ports.json` for the reviewed upstream revision and per-source status. These are checks at a point in time, not ongoing availability guarantees.
 
 LelManga, MangaKatana, and large AnimeSama pages also need Nova’s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
+
+Source logos are stored with each extension and served from Foundry. Sources without published artwork retain the app’s monogram fallback. MangaDex and WeebCentral add two further native readers beyond the reviewed port collection.
 
 ## Native anime sources
 
