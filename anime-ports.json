@@ -60,7 +60,8 @@
       "name": "AnimeUnity (Mirror)",
       "language": "it",
       "upstreamPath": "src/anime/animeunitymirror/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "anitube",
