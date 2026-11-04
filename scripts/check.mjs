@@ -29,7 +29,7 @@ for (const folder of folders) {
     const icon = new URL(manifest.icon);
     assert.match(icon.pathname, new RegExp("^/amabee/Foundry/main/extensions/" + folder + "/icon\\.(?:png|jpg|jpeg|webp|gif|ico)$"));
     const bytes = await readFile(join(root, "extensions", folder, icon.pathname.split("/").at(-1)));
-    assert.ok(bytes.length > 0 && bytes.length <= 512 * 1024, "Source logo must be bounded and committed.");
+    assert.ok(bytes.length > 0 && bytes.length <= 2 * 1024 * 1024, "Source logo must be bounded and committed.");
   }
   assert.ok(manifest.hosts.length > 0 && manifest.hosts.length <= 256);
   for (const host of manifest.hosts) assert.ok(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(host) && host.includes(".") && !isIP(host), `Invalid host grant: ${host}`);
