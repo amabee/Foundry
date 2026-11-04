@@ -21,7 +21,7 @@ export function registryEntries(revision) {
     return {
       id: manifest.id, name: manifest.name, version: manifest.version,
       author: manifest.author, description: (experimental ? `Experimental: ${policy.reason ?? "upstream playback checks have failed."} ` : "") + manifest.description,
-      type: manifest.role === "manga-source" ? "manga-provider" : "custom-source", language: "javascript", lang: policy.lang ?? "multi", icon: manifest.icon ?? "",
+      type: manifest.role === "manga-source" ? "manga-provider" : manifest.kinds.includes("anime") && !manifest.kinds.some(kind => kind === "movie" || kind === "tv") ? "onlinestream-provider" : "custom-source", language: "javascript", lang: policy.lang ?? "multi", icon: manifest.icon ?? "",
       manifestURI: `${base}/manifest.json`, payloadURI: `${base}/${manifest.main}`,
       website: `https://github.com/${repository}/tree/${revision}/extensions/${folder}`,
       tags: ["vestra", "foundry", "native", ...(experimental ? ["experimental"] : [])],

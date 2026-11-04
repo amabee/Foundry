@@ -45,6 +45,7 @@ for (const folder of folders) {
   if (manifest.catalogueSource === "tmdb") assert.equal(typeof provider.matchCatalogue, "function");
 }
 assert.equal(networkCalls, 0);
+assert.equal(registry.filter(entry => entry.type === "onlinestream-provider").length, 17);
 assert.ok(!registry.some((entry) => entry.id === "vestra-streamflix"));
 assert.ok(registry.find((entry) => entry.id === "vestra-vidlink").brokenTag);
 console.log(`PASS ${folders.length} manifests and offline activations, ${registry.length} immutable listings, host grants, reproducible payloads and blocked/experimental policies`);
