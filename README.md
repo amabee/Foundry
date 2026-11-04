@@ -25,6 +25,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaStash | Native en manga; sandbox search, chapters, pages and sample image verified |
 | MangaBats (Manganato) | Experimental native manga; Live metadata is blocked by an automated-access challenge. |
 | Komiku (Indonesian) | Native id manga; sandbox search, chapters, pages and sample image verified |
+| MyNimeKu (Indonesian Manga) | Native id manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

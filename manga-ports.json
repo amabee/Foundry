@@ -137,7 +137,8 @@
       "name": "MyNimeKu (Manga)",
       "language": "id",
       "upstreamPath": "src/manga/mynimekumanga/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "ravenscans",
