@@ -29,6 +29,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaWorldAdult (Italian, 18+) | Native it manga; reader metadata and image headers verified |
 | AnimeSama (French Manga) | Native fr manga; sandbox search, chapters, pages and sample image verified |
 | Taiyo (Portuguese Manga) | Native pt manga; sandbox search, chapters, pages and sample image verified |
+| xComic | Native en manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

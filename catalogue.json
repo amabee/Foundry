@@ -114,5 +114,10 @@
     "status": "available",
     "lang": "pt",
     "previouslyVerified": true
+  },
+  "xcomic": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }

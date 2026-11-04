@@ -12,7 +12,7 @@ function attrs(value2) {
   return out;
 }
 function links(html) {
-  return [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].map((m) => ({ ...attrs(m[1]), body: m[2], text: text(m[2]) }));
+  return [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].map((m) => ({ ...attrs(m[1]), body: m[2], text: text(m[2]), offset: m.index }));
 }
 function url(raw, origin) {
   let value2 = String(raw ?? "").replace(/&amp;/g, "&").trim();
