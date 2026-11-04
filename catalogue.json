@@ -204,5 +204,10 @@
     "status": "available",
     "lang": "it",
     "previouslyVerified": true
+  },
+  "shiro": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }

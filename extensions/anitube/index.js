@@ -62,13 +62,14 @@ function mediaUrl(value, origin) {
   return p.value;
 }
 function request(host, origin) {
-  return async (path, { json = false, method = "GET", headers = {}, body } = {}) => {
+  return async (path, { json = false, full = false, method = "GET", headers = {}, body } = {}) => {
     const p = url(path, origin);
     if (!p) throw Error("Invalid source request.");
     const response = await host.fetch({ url: p.value, method, headers: { Accept: json ? "application/json" : "text/html", Referer: origin + "/", ...headers }, ...body === void 0 ? {} : { body } });
     if (response.status !== 200) throw Error(`Source returned HTTP ${response.status}.`);
     if (typeof response.body !== "string" || response.body.length > 2 * 1024 * 1024) throw Error("Source metadata exceeds its size limit.");
     if (/cf-chl-|<title[^>]*>\s*(?:Just a moment|Attention Required)/i.test(response.body)) throw Error("Source requires browser verification.");
+    if (full) return response;
     if (!json) return response.body;
     try {
       return JSON.parse(response.body);
