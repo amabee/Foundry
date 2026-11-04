@@ -174,5 +174,10 @@
     "status": "available",
     "lang": "pt",
     "previouslyVerified": true
+  },
+  "mynimeku": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
   }
 }

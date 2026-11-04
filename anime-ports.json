@@ -105,7 +105,8 @@
       "name": "MyNimeKu",
       "language": "id",
       "upstreamPath": "src/anime/mynimeku/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "nontonanime",

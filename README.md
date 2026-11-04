@@ -41,6 +41,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | AnimeToast | Native de anime; Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror |
 | Shonen | Native multi anime; sandbox search, episodes, streams and media signature verified |
 | AniTube | Native pt anime; sandbox search, episodes, streams and media signature verified |
+| MyNimeKu (Anime) | Native id anime; sandbox search, episodes, streams and media signature verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
