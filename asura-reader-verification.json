@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-05",
+  "scope": "Native QuickJS metadata and bounded raster checks; no account or premium access.",
+  "cases": [
+    {
+      "title": "Pick Me Up, Infinite Gacha",
+      "chapter": "226",
+      "availability": "early access; empty public image list; explicit locked message verified"
+    },
+    {
+      "title": "Pick Me Up, Infinite Gacha",
+      "chapter": "225",
+      "pages": 17
+    },
+    {
+      "title": "Pick Me Up, Infinite Gacha",
+      "chapter": "224",
+      "pages": 17
+    },
+    {
+      "title": "Solo Leveling: Ragnarok",
+      "chapter": "70",
+      "availability": "early access; empty public image list; explicit locked message verified"
+    },
+    {
+      "title": "Solo Leveling: Ragnarok",
+      "chapter": "68",
+      "pages": 15,
+      "sampleBytes": 237288,
+      "sampleType": "image/webp"
+    },
+    {
+      "title": "Solo Leveling: Ragnarok",
+      "chapter": "1",
+      "pages": 19,
+      "sampleBytes": 237210,
+      "sampleType": "image/webp"
+    }
+  ]
+}
