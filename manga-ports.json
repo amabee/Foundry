@@ -71,7 +71,8 @@
       "name": "MangaBall",
       "language": "multi",
       "upstreamPath": "src/manga/mangaball/provider.ts",
-      "status": "pending"
+      "status": "experimental",
+      "verification": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
     },
     {
       "folder": "mangabuddy",

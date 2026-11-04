@@ -119,5 +119,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "mangaball": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Search and 4228 multilingual chapters verified; image CDN returns HTTP 403"
   }
 }
