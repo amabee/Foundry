@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {activate} from '../extensions/animeunitymirror/index.js';
+test('AnimeUnity uses its current origin and decodes only the declared player data',async()=>{
+ const encoded=Buffer.from('https://media.example/master.m3u8').toString('base64');const source=activate({host:{fetch:async r=>({status:200,body:r.url.includes('?s=')?'<div class="listupd"><article class="bs"><a href="/anime/fixture/" title="Fixture">Fixture</a></article></div>':r.url.includes('/anime/')?'<div class="eplister"><a href="/fixture-episode-1/"><div class="epl-num">1</div></a></div>':`<iframe src="https://ads.example/ignore"></iframe><iframe src="https://anixo.net/embed.html?data=${encodeURIComponent(encoded)}"></iframe>`})}});const title=(await source.search('Fixture'))[0],ep=(await source.getEpisodes(title.id))[0];assert.equal((await source.getStreams(ep.id))[0].videoSources[0].type,'hls');
+});

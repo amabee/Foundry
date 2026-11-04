@@ -1,7 +1,7 @@
 {
   "id": "vestra-mangafire",
   "name": "MangaFire",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sdkVersion": "1.6.0",
   "main": "index.js",
   "role": "manga-source",
@@ -14,7 +14,7 @@
     "static.mfcdn.nl",
     "k99.mfcdn1.xyz"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://mangafire.to",
   "description": "Native multilingual MangaFire API source with local request signing and full chapter pagination."
 }

@@ -33,6 +33,23 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaBall | Experimental native manga; Search and 4228 multilingual chapters verified; image CDN returns HTTP 403 |
 | MangaDot | Experimental native manga; Direct API requires browser verification (HTTP 403) |
 | MangaFire | Native multi manga; sandbox search, chapters, pages and sample image verified |
+| AnimeGG | Native en anime; Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails |
+| AnimeHeaven | Native en anime; sandbox search, episodes, streams and media signature verified |
+| AnimeSaturn Mirror | Native it anime; sandbox search, episodes, streams and media signature verified |
+| AnimeUnion | Native it anime; sandbox search, episodes, streams and media signature verified |
+| AnimeUnity Mirror | Native it anime; sandbox search, episodes, streams and media signature verified |
+| AnimeToast | Native de anime; Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror |
+| Shonen | Native multi anime; sandbox search, episodes, streams and media signature verified |
+| AniTube | Native pt anime; sandbox search, episodes, streams and media signature verified |
+| MyNimeKu (Anime) | Native id anime; sandbox search, episodes, streams and media signature verified |
+| DonghuaStream | Native en anime; Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor |
+| NontonAnime | Native id anime; sandbox search, episodes, streams and media signature verified |
+| AnimeAV1 | Native es anime; sandbox search, episodes, streams and media signature verified |
+| HentaiSaturn (18+) | Native it anime; verified headers only; public metadata and media HEAD passed |
+| HentaiWorld (18+) | Native it anime; verified headers only; public metadata and media HEAD passed |
+| Shiro | Native en anime; sandbox search, episodes, streams and media signature verified |
+| AniWorld | Native de anime; sandbox search, episodes, streams and media signature verified |
+| AniTVPlus | Native multi anime; Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
@@ -52,13 +69,21 @@ pnpm install --frozen-lockfile
 pnpm test
 ```
 
-`pnpm build` bundles KissKH and the manga sources from their `src/` entries. Manga source utilities live in `lib/` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
+`pnpm build` bundles KissKH and the native manga/anime sources from their `src/` entries. Shared source utilities live in `lib/` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
 
-The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Set `VESTRA_CHECKOUT` to a local Vestra checkout (defaults to sibling `../Vestra`) and run `pnpm test:sandbox` to replay all manga fixture assertions inside QuickJS with permission and result-schema checks. This is offline. Use `pnpm test:manga:live --live <folder> --sample-image` for an explicit live reader check, or `--image-headers` to check metadata and image headers without downloading image bytes.
+The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Set `VESTRA_CHECKOUT` to a local Vestra checkout (defaults to sibling `../Vestra`) and run `pnpm test:sandbox` to replay all manga and anime fixture assertions inside QuickJS with permission and result-schema checks. This is offline. Use `pnpm test:manga:live --live <folder> --sample-image` for an explicit live reader check, or `--image-headers` to check metadata and image headers without downloading image bytes.
 
 All 21 manga providers from the reviewed Seanime catalogue have native ports. Seventeen passed live search/chapter/reader checks (MangaWorldAdult used image headers only). RavenScans, MangaBats, MangaDot, and MangaBall remain experimental due to upstream access restrictions; MangaBall metadata works but its image CDN returns HTTP 403. See `manga-ports.json` for the reviewed upstream revision and per-source status. These are checks at a point in time, not ongoing availability guarantees.
 
-LelManga, MangaKatana, and large AnimeSama pages also need Nova’s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
+LelManga, MangaKatana, and large AnimeSama pages also need Novaâ€™s public-CDN, binary-raster, and image-size fixes in Vestra commit `1eea0bbc429670f167c7b37b2c4505960db4d7d6` (`codex/manga-port-runtime`). The previously published v0.2.6 installer predates those fixes.
+
+## Native anime sources
+
+All 17 reviewed anime providers now have native Foundry ports. Thirteen passed live search, episode and stream checks; HentaiSaturn and HentaiWorld used media headers only. AnimeGG (HTTP CDN downgrade), AnimeToast (changed mirrors), DonghuaStream (new unsupported StreamPlay player), and AniTVPlus (metadata endpoints timing out) remain explicitly experimental. See [anime-verification.json](anime-verification.json) for sanitized check results and [anime-ports.json](anime-ports.json) for provenance.
+
+Use `pnpm test:anime:live --live <folder> --sample-media` for an opt-in bounded media-signature check, or `--media-headers` for a HEAD-only check. Some catalogues require `--query` and `--episode`; see each source README. These commands never solve browser challenges or execute downloaded player scripts.
+
+The anime collection requires Nova's SDK 1.7 runtime changes (extension-owned cookie consent, exact-host redirects and timeout cleanup). The published v0.2.7 installer predates those changes. Cookie access is separately reviewed; extensions never receive the browser's cookie jar. Manifest authors use Vestra branding, and standalone payloads retain required license notices.
 
 ## Publishing a source change
 

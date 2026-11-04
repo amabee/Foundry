@@ -1,7 +1,7 @@
 {
   "id": "vestra-xcomic",
   "name": "xComic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "sdkVersion": "1.6.0",
   "main": "index.js",
   "role": "manga-source",
@@ -31,7 +31,7 @@
     "i09.img00.org",
     "i09.img01.org"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra",
   "homepage": "https://xcomic.me",
   "description": "Native xComic English manga source with source-aware chapter selection and data-only Qwik/Next reader parsing."
 }

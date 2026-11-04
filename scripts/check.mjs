@@ -19,6 +19,7 @@ let networkCalls = 0;
 for (const folder of folders) {
   const manifest = JSON.parse(await readFile(join(root, "extensions", folder, "manifest.json"), "utf8"));
   assert.equal(manifest.id, `vestra-${folder}`);
+  assert.ok(!manifest.author?.includes("Seanime Providers contributors"), "Manifest author must use Foundry branding; preserve upstream notices in licensing files.");
   assert.ok(!ids.has(manifest.id)); ids.add(manifest.id);
   assert.match(manifest.version, /^\d+\.\d+\.\d+$/);
   assert.match(manifest.sdkVersion, /^1\.\d+\.\d+$/);
@@ -26,8 +27,8 @@ for (const folder of folders) {
   assert.equal(manifest.main, "index.js");
   assert.ok(manifest.hosts.length > 0 && manifest.hosts.length <= 256);
   for (const host of manifest.hosts) assert.ok(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(host) && host.includes(".") && !isIP(host), `Invalid host grant: ${host}`);
-  for (const permission of manifest.permissions) assert.ok(["network", "network:session"].includes(permission));
-  for (const kind of manifest.kinds) assert.ok(["movie", "tv"].includes(kind));
+  for (const permission of manifest.permissions) assert.ok(["network", "network:session", "network:cookies"].includes(permission));
+  for (const kind of manifest.kinds) assert.ok(["anime", "movie", "tv"].includes(kind));
   if(manifest.role==="manga-source")assert.equal(manifest.kinds.length,0);
   if (catalogue[folder].status !== "blocked") {
     for (const file of ["manifest.json", "index.js"])
@@ -44,6 +45,7 @@ for (const folder of folders) {
   if (manifest.catalogueSource === "tmdb") assert.equal(typeof provider.matchCatalogue, "function");
 }
 assert.equal(networkCalls, 0);
+assert.equal(registry.filter(entry => entry.type === "onlinestream-provider").length, 17);
 assert.ok(!registry.some((entry) => entry.id === "vestra-streamflix"));
 assert.ok(registry.find((entry) => entry.id === "vestra-vidlink").brokenTag);
 console.log(`PASS ${folders.length} manifests and offline activations, ${registry.length} immutable listings, host grants, reproducible payloads and blocked/experimental policies`);

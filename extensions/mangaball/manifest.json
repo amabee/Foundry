@@ -1,7 +1,7 @@
 {
   "id": "vestra-mangaball",
   "name": "MangaBall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sdkVersion": "1.6.0",
   "main": "index.js",
   "role": "manga-source",
@@ -14,7 +14,7 @@
     "bulbasaur.poke-black-and-white.net",
     "cdn.mangaupdates.com"
   ],
-  "author": "Vestra contributors; Seanime Providers contributors",
+  "author": "Vestra contributors",
   "homepage": "https://mangaball.com",
   "description": "Native multilingual MangaBall using the current public API, complete translations and actual search pagination."
 }

@@ -134,5 +134,90 @@
     "status": "available",
     "lang": "multi",
     "previouslyVerified": true
+  },
+  "animegg": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails"
+  },
+  "animeheaven": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "animesaturnmirror": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "animeunion": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "animeunitymirror": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "animetoast": {
+    "status": "experimental",
+    "lang": "de",
+    "reason": "Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror"
+  },
+  "shonen": {
+    "status": "available",
+    "lang": "multi",
+    "previouslyVerified": true
+  },
+  "anitube": {
+    "status": "available",
+    "lang": "pt",
+    "previouslyVerified": true
+  },
+  "mynimeku": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
+  },
+  "donghuastream": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Metadata verified; current titles use a newer StreamPlay mirror absent from the upstream extractor"
+  },
+  "nontonanime": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
+  },
+  "animeav1": {
+    "status": "available",
+    "lang": "es",
+    "previouslyVerified": true
+  },
+  "hentaisaturn": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "hentaiworld": {
+    "status": "available",
+    "lang": "it",
+    "previouslyVerified": true
+  },
+  "shiro": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
+  },
+  "aniworld": {
+    "status": "available",
+    "lang": "de",
+    "previouslyVerified": true
+  },
+  "animetvplus": {
+    "status": "experimental",
+    "lang": "multi",
+    "reason": "Public metadata endpoints time out; offline Astro, playlist and subtitle fixtures pass"
   }
 }

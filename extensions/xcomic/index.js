@@ -1,3 +1,28 @@
+/*
+MIT License
+
+Copyright (c) 2025 Pal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
 // lib/manga-common.js
 function text(value) {
   return String(value ?? "").replace(/<[^>]*>/g, " ").replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (raw, key) => {
@@ -22,7 +47,7 @@ function url(raw, origin) {
   if (value.startsWith("//")) value = "https:" + value;
   else if (value.startsWith("/")) value = origin + value;
   if (value.length > 4096 || /[\s\\\u0000-\u001f\u007f]/.test(value)) return null;
-  const match = /^https:\/\/([a-z0-9]+(?:[.-][a-z0-9]+)*)(\/[^#]*)?$/i.exec(value);
+  const match = /^https:\/\/([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*)(\/[^#]*)?$/i.exec(value);
   if (!match) return null;
   let decoded;
   try {
@@ -119,9 +144,31 @@ function jsonArray(data, key) {
 
 // extensions/xcomic/src/source.js
 var ORIGIN = "https://xcomic.me";
-var HOSTS = ["xcomic.me", "cdn.mangabaka.dev", "i00.img00.org", "i00.img01.org", "i00.img02.org", "i01.img00.org", "i01.img01.org", "i02.img02.org", "i03.img01.org", "i04.img01.org", "i05.img01.org", "i06.img00.org", "i06.img02.org", "i07.img00.org", "i07.img01.org", "i07.img02.org", "i08.img00.org", "i08.img01.org", "i09.img00.org", "i09.img01.org"];
+var HOSTS = [
+  "xcomic.me",
+  "cdn.mangabaka.dev",
+  "i00.img00.org",
+  "i00.img01.org",
+  "i00.img02.org",
+  "i01.img00.org",
+  "i01.img01.org",
+  "i02.img02.org",
+  "i03.img01.org",
+  "i04.img01.org",
+  "i05.img01.org",
+  "i06.img00.org",
+  "i06.img02.org",
+  "i07.img00.org",
+  "i07.img01.org",
+  "i07.img02.org",
+  "i08.img00.org",
+  "i08.img01.org",
+  "i09.img00.org",
+  "i09.img01.org"
+];
 function identity(value) {
-  if (typeof value !== "string" || !/^[a-z0-9_-]{1,200}$/i.test(value)) throw Error("Invalid xComic identity.");
+  if (typeof value !== "string" || !/^[a-z0-9_-]{1,200}$/i.test(value))
+    throw Error("Invalid xComic identity.");
   return value;
 }
 function activate({ host }) {
@@ -138,19 +185,29 @@ function activate({ host }) {
     const { page } = pageOptions(options), q = String(query).trim().slice(0, 500);
     if (!q) return { items: [], hasMore: false };
     const current = await readPage(q, page);
-    if (current.hasMore || !current.items.length || page === 1e3) return current;
+    if (current.hasMore || !current.items.length || page === 1e3)
+      return current;
     const next = await readPage(q, page + 1), ids = new Set(current.items.map((i) => i.id));
-    return { items: current.items, hasMore: next.items.some((i) => !ids.has(i.id)) };
+    return {
+      items: current.items,
+      hasMore: next.items.some((i) => !ids.has(i.id))
+    };
   }
   async function fetchPage(q, page) {
-    const html = await read(`/search?word=${encodeURIComponent(q)}&sortby=score&page=${page}`), found = /* @__PURE__ */ new Map();
+    const html = await read(
+      `/search?word=${encodeURIComponent(q)}&sortby=score&page=${page}`
+    ), found = /* @__PURE__ */ new Map();
     for (const a of links(html)) {
       const p = url(a.href, ORIGIN), match = /^\/title\/([a-z0-9_-]+)$/.exec(p?.path ?? "");
       if (p?.host !== "xcomic.me" || !match || images(a.body).length) continue;
       const title = text(a.body);
       if (!title) continue;
       const preceding = html.slice(Math.max(0, a.offset - 1600), a.offset), img = images(preceding).pop();
-      found.set(match[1], { id: match[1], title: title.slice(0, 500), cover: asset(img?.src, ORIGIN, HOSTS, ORIGIN + "/") });
+      found.set(match[1], {
+        id: match[1],
+        title: title.slice(0, 500),
+        cover: asset(img?.src, ORIGIN, HOSTS, ORIGIN + "/")
+      });
     }
     if (found.size > 400) throw Error("xComic returned too many results.");
     const hasMore = links(html).some((a) => {
@@ -171,7 +228,12 @@ function activate({ host }) {
         if (p?.host !== "xcomic.me" || !m) continue;
         const next = sourceLinks[i + 1]?.offset ?? -1, card = html.slice(a.offset, next < 0 ? html.length : next), label = text(a.body), before = html.slice(Math.max(0, a.offset - 180), a.offset), language = label + " " + ([...before.matchAll(/[\u{1F1E6}-\u{1F1FF}]{2}/gu)].pop()?.[0] ?? "");
         if (!/🇬🇧|🇺🇸|🇨🇦|🇦🇺|🇳🇿|🇮🇪|\bEnglish\b/u.test(language)) continue;
-        const count = Number((text(card).match(/([\d,]+)\s+chapters?/i)?.[1] ?? "0").replace(/,/g, ""));
+        const count = Number(
+          (text(card).match(/([\d,]+)\s+chapters?/i)?.[1] ?? "0").replace(
+            /,/g,
+            ""
+          )
+        );
         sources.push({ id: m[1], count });
       }
       if (!sources.length) return [];
@@ -179,7 +241,8 @@ function activate({ host }) {
       const source = sources[0], body = await read("/source/" + source.id), rows = [];
       for (const a of links(body)) {
         const p = url(a.href, ORIGIN), m = /^\/chapter\/([a-z0-9_-]+)$/.exec(p?.path ?? "");
-        if (p?.host === "xcomic.me" && m) rows.push({ id: m[1], title: text(a.body) });
+        if (p?.host === "xcomic.me" && m)
+          rows.push({ id: m[1], title: text(a.body) });
       }
       return chapters(rows, "en");
     },
@@ -189,11 +252,14 @@ function activate({ host }) {
       const flight = flightData(html);
       if (flight.includes('"imageUrls"')) raw = jsonArray(flight, "imageUrls");
       else {
-        const qwik = /<script\b[^>]*type=["']qwik\/(?:state|json)["'][^>]*>([\s\S]*?)<\/script>/i.exec(html)?.[1];
+        const qwik = /<script\b[^>]*type=["']qwik\/(?:state|json)["'][^>]*>([\s\S]*?)<\/script>/i.exec(
+          html
+        )?.[1];
         if (!qwik) throw Error("xComic reader data is missing.");
         const data = qwik.replace(/"imageUrls",\d+,\[/, '"imageUrls":[');
         raw = jsonArray(data, "imageUrls");
-        if (raw.some((v) => v !== 0 && typeof v !== "string")) throw Error("Invalid xComic serialized images.");
+        if (raw.some((v) => v !== 0 && typeof v !== "string"))
+          throw Error("Invalid xComic serialized images.");
         raw = raw.filter((v) => typeof v === "string");
       }
       return pages(raw, ORIGIN, HOSTS, ORIGIN + path);

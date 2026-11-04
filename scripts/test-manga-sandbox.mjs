@@ -1,5 +1,5 @@
 import {build} from "esbuild";
-import {mkdir,mkdtemp,readdir,rm} from "node:fs/promises";
+import {mkdir,mkdtemp,readFile,readdir,rm} from "node:fs/promises";
 import {join} from "node:path";
 import {fileURLToPath,pathToFileURL} from "node:url";
 import {spawnSync} from "node:child_process";
@@ -13,7 +13,7 @@ try {
  await build({absWorkingDir:root,entryPoints:entries.map(name=>'test/'+name),outdir:scratch,bundle:true,platform:'node',format:'esm',outExtension:{'.js':'.mjs'},packages:'external',plugins:[{name:'native-manga',setup(builder){
   builder.onResolve({filter:/manga-fixture-adapter\.mjs$/},args=>({path:args.path,external:true}));
   builder.onResolve({filter:/extensions\/[a-z0-9-]+\/index\.js$/},args=>({path:args.path.match(/extensions\/([a-z0-9-]+)\//)[1],namespace:'native-manga'}));
-  builder.onLoad({filter:/.*/,namespace:'native-manga'},args=>({contents:`import {nativeActivate} from ${JSON.stringify(pathToFileURL(join(root,'scripts/manga-fixture-adapter.mjs')).href)};export const activate=context=>nativeActivate(${JSON.stringify(args.path)},context);`,resolveDir:root}));
+  builder.onLoad({filter:/.*/,namespace:'native-manga'},async args=>{const {role}=JSON.parse(await readFile(join(root,'extensions',args.path,'manifest.json'),'utf8'));return {contents:`import {nativeActivate} from ${JSON.stringify(pathToFileURL(join(root,'scripts/manga-fixture-adapter.mjs')).href)};export const activate=context=>nativeActivate(${JSON.stringify(args.path)},context,${JSON.stringify(role)});`,resolveDir:root};});
  }}]});
  const files=(await readdir(scratch)).filter(name=>name.endsWith('.mjs')).map(name=>join(scratch,name));
  if(!files.length)throw Error('No sandbox fixture tests were generated.');
