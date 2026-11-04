@@ -1,0 +1,9 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {activate} from "../extensions/animegg/index.js";
+test('AnimeGG preserves sub/dub mirrors, all qualities and decimal episode identities',async()=>{
+ const calls=[];const source=activate({host:{fetch:async r=>{calls.push(r.url);return{status:200,body:r.url.includes('/search/')?'<a class="mse" href="/series/fixture"><h2>Fixture &amp; Friends</h2></a>':r.url.includes('/series/')?'<a class="anm_det_pop" href="/fixture-episode-2.5"><strong>Episode 2.5</strong><i class="anititle">Recap</i></a><a class="anm_det_pop" href="/fixture-episode-1"><strong>Episode 1</strong><i class="anititle">Start</i></a>':r.url.includes('/embed/')?'var videoSources=[{file:"/media/480.mp4",label:"480p"},{file:"/media/1080.mp4",label:"1080p"}];':'<div id="subbed-Animegg"><iframe src="/embed/sub"></iframe></div><div id="dubbed-Animegg"><iframe src="/embed/dub"></iframe></div>'};}}});
+ assert.equal((await source.search('Fixture'))[0].title,'Fixture & Friends');const eps=await source.getEpisodes('fixture');assert.deepEqual(eps.map(e=>e.number),[1,2.5]);assert.equal(eps[1].animeId,'fixture');const streams=await source.getStreams(eps[0].id);assert.deepEqual(streams.map(s=>s.server),['GG-SUB','GG-DUB']);assert.equal(streams[0].videoSources.length,2);const fallback=await source.getStreams(eps[0].id,{excludeServers:['GG-SUB']});assert.equal(fallback.length,1);assert.equal(fallback[0].server,'GG-DUB');
+ await assert.rejects(source.getEpisodes('../bad'),/identity/);await assert.rejects(source.getStreams('https://evil.example/fixture-episode-1'),/path/);
+});
+test('AnimeGG does not execute dynamic source expressions',async()=>{
+ const source=activate({host:{fetch:async r=>({status:200,body:r.url.includes('/embed/')?'var videoSources=executeRemoteCode();':'<div id="subbed-Animegg"><iframe src="/embed/sub"></iframe></div>'})}});await assert.rejects(source.getStreams('/fixture-episode-1'),/source data/);
+});

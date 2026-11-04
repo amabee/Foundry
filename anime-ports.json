@@ -1,0 +1,126 @@
+{
+  "upstream": "https://github.com/Seanime-contributions/Seanime-Providers",
+  "revision": "60f46c873d20efcb977eaf8a010672fe526db229",
+  "providers": [
+    {
+      "folder": "animeav1",
+      "name": "AnimeAV1",
+      "language": "es",
+      "upstreamPath": "src/anime/AnimeAV1/main.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "animegg",
+      "name": "AnimeGG",
+      "language": "en",
+      "upstreamPath": "src/anime/animegg/provider.js",
+      "status": "experimental",
+      "verification": "Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails"
+    },
+    {
+      "folder": "animeheaven",
+      "name": "AnimeHeaven",
+      "language": "en",
+      "upstreamPath": "src/anime/animeheaven/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "animesaturnmirror",
+      "name": "AnimeSaturn (Mirror)",
+      "language": "it",
+      "upstreamPath": "src/anime/animesaturnmirror/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "animetoast",
+      "name": "AnimeToast",
+      "language": "de",
+      "upstreamPath": "src/anime/animetoast/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "animetvplus",
+      "name": "AniTVPlus",
+      "language": "multi",
+      "upstreamPath": "src/anime/animetvplus/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "animeunion",
+      "name": "AnimeUnion",
+      "language": "it",
+      "upstreamPath": "src/anime/animeunion/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "animeunitymirror",
+      "name": "AnimeUnity (Mirror)",
+      "language": "it",
+      "upstreamPath": "src/anime/animeunitymirror/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "anitube",
+      "name": "AniTube",
+      "language": "pt",
+      "upstreamPath": "src/anime/anitube/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "aniworld",
+      "name": "AniWorld",
+      "language": "de",
+      "upstreamPath": "src/anime/aniworld/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "donghuastream",
+      "name": "DonghuaStream",
+      "language": "en",
+      "upstreamPath": "src/anime/donghuastream/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "hentaisaturn",
+      "name": "HentaiSaturn",
+      "language": "it",
+      "upstreamPath": "src/anime/hentaisaturn/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "hentaiworld",
+      "name": "HentaiWorld",
+      "language": "it",
+      "upstreamPath": "src/anime/hentaiworld/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "mynimeku",
+      "name": "MyNimeKu",
+      "language": "id",
+      "upstreamPath": "src/anime/mynimeku/provider.ts",
+      "status": "pending"
+    },
+    {
+      "folder": "nontonanime",
+      "name": "NonTonAnime",
+      "language": "id",
+      "upstreamPath": "src/anime/nontonanime/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "shiro",
+      "name": "Shiro",
+      "language": "en",
+      "upstreamPath": "src/anime/shiro/provider.js",
+      "status": "pending"
+    },
+    {
+      "folder": "shonen",
+      "name": "Shonen",
+      "language": "multi",
+      "upstreamPath": "src/anime/shonen/provider.js",
+      "status": "pending"
+    }
+  ]
+}

@@ -134,5 +134,10 @@
     "status": "available",
     "lang": "multi",
     "previouslyVerified": true
+  },
+  "animegg": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Metadata verified; CDN redirects to HTTP, so guarded HTTPS media verification fails"
   }
 }
