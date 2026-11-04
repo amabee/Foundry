@@ -93,7 +93,8 @@
       "name": "HentaiSaturn",
       "language": "it",
       "upstreamPath": "src/anime/hentaisaturn/provider.ts",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified headers only; public metadata and media HEAD passed"
     },
     {
       "folder": "hentaiworld",
