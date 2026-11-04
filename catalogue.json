@@ -89,5 +89,10 @@
     "status": "experimental",
     "lang": "en",
     "reason": "Live metadata is blocked by an automated-access challenge."
+  },
+  "komiku": {
+    "status": "available",
+    "lang": "id",
+    "previouslyVerified": true
   }
 }

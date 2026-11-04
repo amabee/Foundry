@@ -45,7 +45,8 @@
       "name": "Komiku",
       "language": "id",
       "upstreamPath": "src/manga/komiku/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "kuramanga",

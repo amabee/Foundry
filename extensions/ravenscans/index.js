@@ -105,7 +105,7 @@ function reader(host, origin) {
 
 // lib/html-manga.js
 function createHtmlManga(host, config) {
-  const { origin, hosts, bookPattern, chapterPattern } = config, originHost = origin.slice(8), read = reader(host, origin);
+  const { origin, hosts, bookPattern, chapterPattern } = config, originHost = origin.slice(8), read = reader(host, origin), searchRead = config.searchOrigin ? reader(host, config.searchOrigin) : read;
   const own = (href, pattern) => {
     const parsed = url(href, origin);
     return parsed?.host === originHost && pattern.test(parsed.path) ? parsed.path : null;
@@ -114,7 +114,7 @@ function createHtmlManga(host, config) {
   async function searchPage(query, options = {}) {
     const { page } = pageOptions(options), q = String(query).trim().slice(0, 500);
     if (!q) return { items: [], hasMore: false };
-    const html = await read(config.searchPath(q, page)), found = /* @__PURE__ */ new Map();
+    const html = await searchRead(config.searchPath(q, page)), found = /* @__PURE__ */ new Map();
     for (const block of config.results(html)) {
       const selected = links(block).filter((link2) => own(link2.href, bookPattern));
       if (!selected.length) continue;
