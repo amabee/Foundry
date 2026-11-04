@@ -39,5 +39,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "mangahub": {
+    "status": "available",
+    "lang": "ru",
+    "previouslyVerified": true
   }
 }

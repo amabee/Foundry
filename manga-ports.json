@@ -98,7 +98,8 @@
       "name": "MangaHub",
       "language": "ru",
       "upstreamPath": "src/manga/mangahub/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "mangakatana",

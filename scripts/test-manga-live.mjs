@@ -16,7 +16,7 @@ try {
   if(process.argv.includes("--sample-image")) {
     const sample=await runtime.sdk.safeFetch({url:pages[0].url,method:"GET",body:null,headers:{...pages[0].headers,Range:"bytes=0-4095"},maxBytes:4*1024*1024,timeoutMs:15000});
     assert([200,206].includes(sample.status));
-    const bytes=await runtime.sdk.safeFetchBytes({url:pages[0].url,headers:{...pages[0].headers,Range:"bytes=0-4095"},maxBytes:4*1024*1024,timeoutMs:15000});
+    const bytes=await runtime.sdk.safeFetchBytes({url:pages[0].url,headers:pages[0].headers,maxBytes:4*1024*1024,timeoutMs:15000});
     const hex=Buffer.from(bytes.slice(0,12)).toString("hex");assert(/^(?:ffd8ff|89504e470d0a1a0a|474946383[79]61|52494646[0-9a-f]{8}57454250)/.test(hex),"Expected actual JPEG, PNG, GIF or WebP image bytes");sampleStatus=sample.status;
   }
   const report={source:runtime.manifest.id,checkedAt:new Date().toISOString(),searchResults:search.items.length,secondPageResults:second.items.length,hasMore:search.hasMore,chapters:chapters.length,pages:pages.length,imageHosts:hosts,sampleStatus};
