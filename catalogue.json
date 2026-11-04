@@ -44,5 +44,10 @@
     "status": "available",
     "lang": "ru",
     "previouslyVerified": true
+  },
+  "asurascans": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }

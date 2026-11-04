@@ -21,7 +21,8 @@
       "name": "AsuraScans",
       "language": "en",
       "upstreamPath": "src/manga/asurascans/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "atsumaru",

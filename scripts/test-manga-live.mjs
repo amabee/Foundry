@@ -5,10 +5,11 @@ import {openMangaRuntime} from "./manga-runtime.mjs";
 if(!process.argv.includes("--live"))throw Error("This check contacts the source. Pass --live and an extension folder.");
 const name=process.argv[process.argv.indexOf("--live")+1];
 const vestra=process.env.VESTRA_CHECKOUT??resolve("../Vestra");
+const query=process.argv.includes("--query")?process.argv[process.argv.indexOf("--query")+1]:"Naruto";
 const runtime=await openMangaRuntime(name,vestra);
 try {
-  const search=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",["Naruto",{page:1,limit:24}]));assert(search.items.length);
-  const second=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",["Naruto",{page:2,limit:24}]));
+  const search=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",[query,{page:1,limit:24}]));assert(search.items.length);
+  const second=runtime.sdk.mangaSearchPageSchema.parse(await runtime.call("searchPage",[query,{page:2,limit:24}]));
   const chapters=runtime.sdk.mangaChaptersSchema.parse(await runtime.call("getChapters",[search.items[0].id]));assert(chapters.length);
   const pages=runtime.sdk.mangaPagesSchema.parse(await runtime.call("getPages",[chapters[0].id]));assert(pages.length);
   const hosts=[...new Set(pages.map(page=>new URL(page.url).hostname))];assert(hosts.every(host=>runtime.manifest.hosts.includes(host)));
