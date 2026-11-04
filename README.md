@@ -17,6 +17,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaHub (Russian) | Native ru manga; sandbox search, chapters, pages and sample image verified |
 | AsuraScans | Native en manga; sandbox search, chapters, pages and sample image verified |
 | Atsumaru | Native en manga; sandbox search, chapters, pages and sample image verified |
+| FanFox | Native en manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |

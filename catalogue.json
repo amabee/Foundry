@@ -54,5 +54,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "fanfox": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }
