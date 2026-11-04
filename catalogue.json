@@ -84,5 +84,10 @@
     "status": "available",
     "lang": "en",
     "previouslyVerified": true
+  },
+  "manganato": {
+    "status": "experimental",
+    "lang": "en",
+    "reason": "Live metadata is blocked by an automated-access challenge."
   }
 }

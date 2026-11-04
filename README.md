@@ -23,6 +23,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | MangaFreak | Native en manga; sandbox search, chapters, pages and sample image verified |
 | RavenScans | Experimental native manga; Live metadata is blocked by an automated-access challenge. |
 | MangaStash | Native en manga; sandbox search, chapters, pages and sample image verified |
+| MangaBats (Manganato) | Experimental native manga; Live metadata is blocked by an automated-access challenge. |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
