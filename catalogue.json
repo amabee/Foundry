@@ -104,5 +104,10 @@
     "status": "available",
     "lang": "it",
     "previouslyVerified": true
+  },
+  "animesama": {
+    "status": "available",
+    "lang": "fr",
+    "previouslyVerified": true
   }
 }

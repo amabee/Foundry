@@ -15,7 +15,8 @@
       "name": "AnimeSama (Manga)",
       "language": "fr",
       "upstreamPath": "src/manga/animesama/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "asurascans",
