@@ -30,7 +30,8 @@
       "name": "AnimeSaturn (Mirror)",
       "language": "it",
       "upstreamPath": "src/anime/animesaturnmirror/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "animetoast",
