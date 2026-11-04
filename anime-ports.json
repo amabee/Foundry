@@ -125,7 +125,8 @@
       "name": "Shonen",
       "language": "multi",
       "upstreamPath": "src/anime/shonen/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     }
   ]
 }

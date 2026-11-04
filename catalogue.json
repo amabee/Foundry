@@ -164,5 +164,10 @@
     "status": "experimental",
     "lang": "de",
     "reason": "Live metadata works; reviewed titles no longer expose the upstream MP4Upload mirror"
+  },
+  "shonen": {
+    "status": "available",
+    "lang": "multi",
+    "previouslyVerified": true
   }
 }
