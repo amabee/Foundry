@@ -52,7 +52,8 @@
       "name": "AnimeUnion",
       "language": "it",
       "upstreamPath": "src/anime/animeunion/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "animeunitymirror",
