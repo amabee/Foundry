@@ -13,6 +13,7 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 | HentaiEra (18+) | Native manga source; paged search and reader metadata verified |
 | Hentai2Read (18+) | Experimental native manga source; live metadata returned HTTP 403 |
 | MangaBuddy (MangaK) | Native English manga source; paged search, chapters, reader metadata and sample image verified |
+| MangaKatana | Native en manga; sandbox search, chapters, pages and sample image verified |
 | MovieBox | Available; previously verified guest playback |
 | KissKH | Available; previously verified playback |
 | Internet Archive | Available; previously verified archival playback |
@@ -32,7 +33,7 @@ pnpm install --frozen-lockfile
 pnpm test
 ```
 
-`pnpm build` bundles KissKH and the two manga sources from their `src/` entries. Manga source utilities live in `lib/manga-sites.js` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
+`pnpm build` bundles KissKH and the manga sources from their `src/` entries. Manga source utilities live in `lib/manga-sites.js` and are compiled into each standalone payload. The other extensions are authored directly as standalone ES modules in `index.js`. `pnpm check` validates manifests, exact pinned registry payloads, method exports and offline activation. It does not test live streaming or replace Vestra's QuickJS sandbox tests.
 
 The [Vestra SDK and runtime](https://github.com/amabee/Vestra/tree/main/packages/extension-host) stay in Vestra. This repository's compatibility workflow checks the sources against a pinned Vestra checkout and runs its sandbox/provider tests. Integration/live commands in individual source READMEs refer to that Vestra checkout.
 

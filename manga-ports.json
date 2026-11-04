@@ -105,7 +105,8 @@
       "name": "MangaKatana",
       "language": "en",
       "upstreamPath": "src/manga/mangakatana/provider.js",
-      "status": "pending"
+      "status": "verified",
+      "verification": "verified"
     },
     {
       "folder": "manganato",

@@ -34,5 +34,10 @@
     "status": "available",
     "previouslyVerified": true,
     "lang": "en"
+  },
+  "mangakatana": {
+    "status": "available",
+    "lang": "en",
+    "previouslyVerified": true
   }
 }
