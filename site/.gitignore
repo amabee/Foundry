@@ -3,3 +3,6 @@ node_modules/
 .hallmark/screens/
 
 .hallmark/shots/
+
+# Keep host/account-specific settings out of the repository.
+.openai/
