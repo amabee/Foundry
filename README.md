@@ -62,6 +62,10 @@ https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json
 
 Status records reflect earlier checks, not a guarantee that an upstream service is currently available. Sources remain optional and require Vestra's permission review before installation. Existing extension IDs and host grants are retained.
 
+## Marketplace site
+
+The [marketplace source](site/README.md) contains the Extensions and Plugins site. Run `pnpm site:test` to build and verify it, then `node site/serve.mjs` to preview it locally.
+
 ## Development
 
 Use Node 22 or newer and pnpm 11.9.0:
