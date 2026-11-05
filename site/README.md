@@ -27,3 +27,5 @@ For Vercel, import the repository with **Root Directory `./`**. The root `vercel
 For a manual deployment, run the build locally and upload the contents of `site/dist/`. Keep its `assets/` folder and JSON files alongside `index.html`. Search, filters and extension details run in the browser; there is no server to deploy. The site is not connected to a GPT account or a hosted Sites project.
 
 Site assets use relative paths, so the same output supports a static subdirectory host. Source fonts are Oswald and Archivo from Google Fonts under the included OFL licenses; source logos retain their source identity.
+
+The header and footer use `assets/foundry-mascot-girl.png`; the favicon and touch icon use `assets/foundry-mascot-icon.png`. Both are transparent PNGs generated from the Vestra mascot reference. Generation prompts are kept in `design/`.

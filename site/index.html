@@ -10,7 +10,8 @@
     />
     <meta name="referrer" content="no-referrer" />
     <title>Foundry: Extensions & Plugins for Vestra</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/foundry-mascot-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/foundry-mascot-icon.png" />
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./app.js"></script>
   </head>
@@ -19,10 +20,14 @@
     <header class="masthead">
       <div class="container topbar">
         <a class="brand" href="./" aria-label="Foundry home"
-          ><svg width="29" height="32" viewBox="0 0 29 32" aria-hidden="true">
-            <path fill="currentColor" d="M0 0h29v7H8v6h16v7H8v12H0z" /></svg
-          ><span>Foundry</span><span class="byline">for Vestra</span></a
-        >
+          ><img
+            class="brand-logo"
+            src="./assets/foundry-mascot-girl.png"
+            alt="Vestra Foundry"
+            width="1254"
+            height="1254"
+            fetchpriority="high"
+        /></a>
         <nav aria-label="Main">
           <a
             href="https://github.com/amabee/Foundry"
@@ -173,7 +178,14 @@
       </section>
     </main>
     <footer class="container footer">
-      <a class="footer-brand" href="./">Foundry</a>
+      <a class="footer-brand" href="./"
+        ><img
+          src="./assets/foundry-mascot-girl.png"
+          alt="Vestra Foundry"
+          width="1254"
+          height="1254"
+          loading="lazy"
+      /></a>
       <p>Made for Vestra. Built in the open.</p>
       <a
         href="https://github.com/amabee/Foundry/issues"

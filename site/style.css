@@ -905,3 +905,27 @@ summary {
     scroll-behavior: auto !important;
   }
 }
+
+.topbar {
+  padding-block: var(--space-xs);
+}
+.brand-logo {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+.footer-brand img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 96px;
+    height: 96px;
+  }
+  .footer-brand img {
+    width: 80px;
+    height: 80px;
+  }
+}
