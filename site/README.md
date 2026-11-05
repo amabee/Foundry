@@ -12,4 +12,16 @@ node site/serve.mjs
 
 The preview is at http://127.0.0.1:5198. `site/dist/` is the deployable static output. No tokens, API keys, server, or account database are required. A build packages the current reviewed registry; rebuild the site after publishing catalogue changes. Installation copies a pinned manifest URL into Nova’s existing permission-review flow. It does not execute source payloads or silently install extensions.
 
-The tracked `.openai/hosting.json` identifies the Sites deployment. Site assets use relative paths, so the same output supports a static subdirectory host. Source fonts are Oswald and Archivo from Google Fonts under the included OFL licenses; source logos retain their source identity.
+## Self-hosting
+
+Use these settings on your static host:
+
+- Project root: the Foundry repository root.
+- Build command: `node site/build.mjs` (Node 22 or newer).
+- Publish/output directory: `site/dist`.
+- Framework preset: none/static.
+- Environment variables: none.
+
+For a manual deployment, run the build locally and upload the contents of `site/dist/`. Keep its `assets/` folder and JSON files alongside `index.html`. Search, filters and extension details run in the browser; there is no server to deploy. The site is not connected to a GPT account or a hosted Sites project.
+
+Site assets use relative paths, so the same output supports a static subdirectory host. Source fonts are Oswald and Archivo from Google Fonts under the included OFL licenses; source logos retain their source identity.
