@@ -1,0 +1,19 @@
+{
+  "scanned": "2026-11-05",
+  "findings": {
+    "fonts": "No existing site",
+    "palette": "New site; warm industrial requested",
+    "framework": "Foundry/package.json:1 Node build scripts; no site framework",
+    "material": "Foundry/extensions/registry.json:1 and catalogue.json:1: published source metadata and logos"
+  },
+  "preserve": [
+    "registry URLs and pinned payloads",
+    "source logos",
+    "publication status"
+  ],
+  "introduce": [
+    "buildless catalogue",
+    "Formwork night-pour tokens",
+    "search, filters, details and install instructions"
+  ]
+}

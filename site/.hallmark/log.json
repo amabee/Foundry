@@ -1,0 +1,30 @@
+[
+ {
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "formwork",
+  "axes": [
+   "dark",
+   "display-condensed",
+   "warm"
+  ],
+  "hero": "none (app screen)",
+  "nav": "compact catalogue bar",
+  "footer": "registry URL and source links",
+  "imagery": "real source logos",
+  "photos": [],
+  "entry": "index.html",
+  "fingerprint": "foundry-native-catalogue",
+  "sections": [
+   "intro",
+   "catalogue",
+   "registry",
+   "footer"
+  ],
+  "signature": "real source logo index",
+  "waived": [],
+  "prompt": "Foundry Extensions and Plugins marketplace. User selected warm industrial charcoal orange bold compact.",
+  "date": "2026-11-05",
+  "mode": "build"
+ }
+]

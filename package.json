@@ -16,7 +16,9 @@
     "test": "pnpm run build && node --test test/*.test.mjs && pnpm run check",
     "test:sandbox": "node scripts/test-manga-sandbox.mjs",
     "test:manga:live": "node scripts/test-manga-live.mjs",
-    "test:anime:live": "node scripts/test-anime-live.mjs"
+    "test:anime:live": "node scripts/test-anime-live.mjs",
+    "site:build": "node site/build.mjs",
+    "site:test": "node site/build.mjs && node --test site/test.mjs"
   },
   "devDependencies": {
     "@noble/ciphers": "2.4.0",

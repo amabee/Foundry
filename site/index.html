@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#20201e" />
+    <meta
+      name="description"
+      content="Discover extensions and plugins for Vestra. Browse native sources, inspect permissions, and copy installation links from the Foundry catalogue."
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>Foundry: Extensions & Plugins for Vestra</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#catalogue">Skip to catalogue</a>
+    <header class="masthead">
+      <div class="container topbar">
+        <a class="brand" href="./" aria-label="Foundry home"
+          ><svg width="29" height="32" viewBox="0 0 29 32" aria-hidden="true">
+            <path fill="currentColor" d="M0 0h29v7H8v6h16v7H8v12H0z" /></svg
+          ><span>Foundry</span><span class="byline">for Vestra</span></a
+        >
+        <nav aria-label="Main">
+          <a
+            href="https://github.com/amabee/Foundry"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M7 7h10v10" /></svg></a
+          ><a
+            href="https://github.com/amabee/Vestra/releases/latest"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Get Vestra</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">Extend your Vestra.</h1>
+          <p>Sources and tools for the way you watch and read.</p>
+        </div>
+        <div class="connect">
+          <button class="primary" id="connect">
+            Copy registry URL
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="8" y="8" width="12" height="12" rx="1" />
+              <path d="M16 8V4H4v12h4" />
+            </svg></button
+          ><button class="text-button" id="help">How to install</button>
+        </div>
+      </section>
+      <section id="catalogue" aria-label="Marketplace">
+        <div class="catalogue-top">
+          <nav class="tabs" aria-label="Catalogue type">
+            <a href="?tab=extensions" data-tab="extensions" aria-current="page"
+              >Extensions <span id="extension-count"></span></a
+            ><a href="?tab=plugins" data-tab="plugins"
+              >Plugins <span id="plugin-count"></span
+            ></a>
+          </nav>
+          <span class="catalogue-note">From the Foundry registry</span>
+        </div>
+        <form class="searchbar" id="search-form" role="search">
+          <div class="search-field">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+            ><label class="visually-hidden" for="search"
+              >Search extensions and plugins</label
+            ><input
+              id="search"
+              type="search"
+              placeholder="Search by name, source, or language…"
+              autocomplete="off"
+            /><kbd>/</kbd>
+          </div>
+          <label class="sort"
+            >Sort by
+            <select id="sort">
+              <option value="az">A to Z</option>
+              <option value="za">Z to A</option>
+            </select></label
+          >
+        </form>
+        <div class="workspace">
+          <aside class="filters" aria-label="Catalogue filters">
+            <fieldset>
+              <legend>Category</legend>
+              <div id="categories"></div>
+            </fieldset>
+            <div class="filter-language">
+              <label for="language">Language</label
+              ><select id="language">
+                <option value="all">All languages</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend>Availability</legend>
+              <label class="check"
+                ><input type="checkbox" id="experimental" />Include
+                experimental</label
+              >
+            </fieldset>
+            <fieldset>
+              <legend>Content</legend>
+              <label class="check"
+                ><input type="checkbox" id="adult" />Show adult sources
+                (18+)</label
+              >
+            </fieldset>
+            <button class="text-button reset" id="reset" type="button">
+              Reset filters
+            </button>
+            <p class="filter-note">
+              Availability reflects previous checks, not live uptime.
+            </p>
+            <a
+              class="contribute"
+              href="https://github.com/amabee/Foundry/blob/main/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Build for Vestra
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M7 7h10v10" /></svg
+            ></a>
+          </aside>
+          <div class="results">
+            <div class="results-heading">
+              <h2 id="results-title">All extensions</h2>
+              <p id="results-count" aria-live="polite"></p>
+            </div>
+            <div id="list" class="extension-grid" aria-busy="true">
+              <p class="loading" role="status">Loading the catalogue…</p>
+            </div>
+            <div id="catalogue-error" class="empty" hidden>
+              <h3>Couldn’t load the catalogue.</h3>
+              <p>Check your connection and try again.</p>
+              <button class="primary" id="retry">Try again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="registry-strip" aria-label="Connect Foundry">
+        <div>
+          <h2>One registry. Your sources.</h2>
+          <p>Add Foundry in Vestra’s Extensions → Registries.</p>
+        </div>
+        <div class="registry-field">
+          <label class="visually-hidden" for="registry-url"
+            >Foundry registry URL</label
+          ><input
+            id="registry-url"
+            readonly
+            value="https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json"
+          /><button
+            class="copy-small"
+            id="copy-registry"
+            aria-label="Copy Foundry registry URL"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="8" y="8" width="12" height="12" rx="1" />
+              <path d="M16 8V4H4v12h4" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="container footer">
+      <a class="footer-brand" href="./">Foundry</a>
+      <p>Made for Vestra. Built in the open.</p>
+      <a
+        href="https://github.com/amabee/Foundry/issues"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Report an issue</a
+      >
+    </footer>
+    <dialog id="detail" aria-labelledby="detail-title">
+      <div class="dialog-top">
+        <span>Extension details</span
+        ><button class="close" aria-label="Close details">×</button>
+      </div>
+      <div id="detail-content"></div>
+    </dialog>
+    <dialog id="install-help" aria-labelledby="help-title">
+      <div class="dialog-top">
+        <span>Connect Foundry</span
+        ><button class="close" aria-label="Close installation help">×</button>
+      </div>
+      <div class="dialog-body">
+        <h2 id="help-title">Add Foundry to Vestra.</h2>
+        <ol class="steps">
+          <li>Copy the Foundry registry URL.</li>
+          <li>
+            In Vestra, open <strong>Extensions → Registries</strong> and add the
+            URL.
+          </li>
+          <li>
+            Browse Available, choose an extension, and review its permissions
+            before installing.
+          </li>
+        </ol>
+        <button class="primary" id="help-copy">Copy registry URL</button>
+        <p class="dialog-note">
+          For a single extension, copy its install link and paste it into Add
+          extension. Foundry never installs or grants permissions automatically.
+        </p>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <noscript
+      ><section class="container empty">
+        <h2>Browse the registry directly.</h2>
+        <p>
+          Enable JavaScript for search and filters, or
+          <a
+            href="https://raw.githubusercontent.com/amabee/Foundry/main/extensions/registry.json"
+            >open the Foundry registry</a
+          >
+          and copy a manifest URL into Vestra.
+        </p>
+      </section></noscript
+    >
+  </body>
+</html>

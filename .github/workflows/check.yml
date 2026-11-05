@@ -21,6 +21,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm audit --audit-level=low
       - run: pnpm test
+      - run: pnpm site:test
       - name: Require committed generated payloads
         run: git diff --exit-code -- extensions
   vestra-sdk:
