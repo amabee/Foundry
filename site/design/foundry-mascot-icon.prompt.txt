@@ -1,0 +1,5 @@
+Tool: built-in image generation
+Reference: site/assets/foundry-mascot-girl.png
+Transparent background: true
+
+Create the small browser favicon / app icon companion to this exact Vestra Foundry girl mascot logo. Identity preservation is crucial: same dark chocolate-brown hair, fluffy bangs, orange hair clip and side ponytail, large amber-orange anime eyes, cheerful expression, soft high-quality anime chibi shading, and charcoal hoodie. A tight centered head-and-shoulders portrait of this same girl, face filling most of a square composition, with enough padding that all hair and the ponytail fit. Remove ALL lettering, the wordmark, orbital swoosh, floating sparkles, decorative hand marks and any typography. No waving hand in this tight portrait. Keep the girl's exact character design and warm orange-brown-charcoal palette, with simplified clean silhouette readable as a tiny favicon. Genuinely transparent background, no frame, no background panel, no checkerboard, no watermark. One single icon, not a sheet of options.

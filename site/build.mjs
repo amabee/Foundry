@@ -19,7 +19,6 @@ for (const name of [
   "base.css",
   "app.js",
   "model.js",
-  "favicon.svg",
 ])
   await copyFile(join(site, name), join(dist, name));
 const registry = JSON.parse(
